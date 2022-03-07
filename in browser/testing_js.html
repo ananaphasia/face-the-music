@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spotify Web Playback SDK Quick Start</title>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>  
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  </head>
+  <body>
+    <h1>Spotify Web Playback SDK Quick Start</h1>
+    <!-- <button id="togglePlay">Toggle Play</button> -->
+    <div id="like_button_container"></div>
+    
+    <script>
+        window.onSpotifyWebPlaybackSDKReady = () => {
+        const token = 'BQAt21saZicjX7Ex5EMx5YyUNqozmGyoUnh-ZSPTdNjrQoMaNo9MVEmH2SCoRDu7sh5ArJuGwjrLaOAHQrH3uKPeOi99LKV-u0ikihla8_FPqNpP1y5ayTzIBbU4QiaueYf77a6TmagXCzyA8wCDIohndRJOpA';
+        const player = new Spotify.Player({
+            name: 'Web Playback SDK Quick Start Player',
+            getOAuthToken: cb => { cb(token); },
+            volume: 0.5
+        })};
+
+         // Ready
+        player.addListener('ready', ({ device_id }) => {
+            console.log('Ready with Device ID', device_id);
+        });
+
+        // Not Ready
+        player.addListener('not_ready', ({ device_id }) => {
+            console.log('Device ID has gone offline', device_id);
+        });
+
+        player.addListener('initialization_error', ({ message }) => { 
+            console.error(message);
+        });
+
+        player.addListener('authentication_error', ({ message }) => {
+            console.error(message);
+        });
+
+        player.addListener('account_error', ({ message }) => {
+            console.error(message);
+        });
+
+        player.connect();
+
+        document.getElementById('togglePlay').onclick = function() {
+            player.togglePlay();
+        };
+
+
+    </script>
+    <script>
+        'use strict';
+
+        const e = React.createElement;
+
+        class LikeButton extends React.Component {
+        constructor(props) {
+            super(props);
+            this.state = { liked: false };
+        }
+
+        render() {
+            if (this.state.liked) {
+            return 'You liked this.';
+            }
+
+            return e(
+            'button',
+            { onClick: () => this.setState({ liked: true }) },
+            'Like'
+            );
+        }
+        }
+
+        const domContainer = document.querySelector('#like_button_container');
+        ReactDOM.render(e(LikeButton), domContainer);
+
+    </script>
+  </body>
+</html>
