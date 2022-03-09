@@ -1,0 +1,189 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+%----------Packages----------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+% \usepackage{amsrefs}
+%\usepackage{dsfont}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+%\usepackage{stmaryrd}
+%\usepackage[all]{xy}
+\usepackage[mathcal]{eucal} % changes meaning of \mathcal
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+\usepackage{verbatim} %%includes comment environment
+\usepackage{fullpage} %%smaller margins
+\usepackage{indentfirst} %%indent first paragraphs after sections
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=red,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\urlstyle{same}
+\usepackage{graphicx}
+\graphicspath{ {./img/} }
+\usepackage{bm}
+\usepackage{calc}
+
+\usepackage[
+backend=biber,
+style=authoryear,
+bibstyle=authoryear,
+sorting=nty,
+maxbibnames=20,
+maxcitenames=2,
+giveninits = true,
+terseinits=true,
+uniquename=false
+]{biblatex}
+\addbibresource{ref.bib}
+\DeclareNameAlias{sortname}{family-given}
+\renewcommand*{\revsdnamepunct}{}
+
+% \usepackage{lineno}
+% \linenumbers
+
+%----------Commands----------
+%%penalizes orphans
+\clubpenalty = 9999
+\widowpenalty = 9999
+
+%% blackboard bold math capitals
+\newcommand{\bbF}{\mathbb{F}}
+\newcommand{\bbN}{\mathbb{N}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\bbQ}{\mathbb{Q}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\bbZ}{\mathbb{Z}}
+
+\renewcommand{\phi}{\varphi}
+\renewcommand{\emptyset}{\O}
+
+\renewcommand{\_}[1]{\underline{ #1 }}
+\DeclarePairedDelimiter{\abs}{\lvert}{\rvert}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+
+\DeclareMathOperator{\ext}{ext}
+\DeclareMathOperator{\bridge}{bridge}
+
+% Start for Sheet 14
+\newcommand{\vx}{\mathbf{x}}
+\newcommand{\vy}{\mathbf{y}}
+\newcommand{\vz}{\mathbf{z}}
+\newcommand{\va}{\mathbf{a}}
+\newcommand{\vb}{\mathbf{b}}
+
+\newcommand{\G}{\mathcal{G}}
+
+% End for Sheet 14
+
+\newcommand{\head}[1]{
+	\begin{center}
+		{\large #1}
+		\vspace{.2 in}
+	\end{center}
+	
+	\bigskip 
+}
+\newcommand{\hint}[2][Hint]{
+	
+	(#1: #2)
+}
+
+%----------Theorems----------
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{examples}[theorem]{Examples}
+\newtheorem{example}[theorem]{Example}
+
+\newtheorem{axiom}{Axiom}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem*{definition*}{Definition}
+\newtheorem{nondefinition}[theorem]{Non-Definition}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{warning}[theorem]{Warning}
+\newtheorem{question}[theorem]{Question}
+
+% \numberwithin{equation}{subsection}
+
+\linespread{2}
+
+%----------Editting----------
+
+%\newcommand{\hide}[1]{} % for student version
+%\newcommand{\com}[1]{} % for student version
+%\newcommand{\meta}[1]{} % for removing meta comments in the script
+
+\newcommand{\hide}[1]{{\color{red} #1}} % for instructor version
+\newcommand{\com}[1]{{\color{blue} #1}} % for instructor version
+\newcommand{\meta}[1]{{\color{green} #1}} % for making notes about the script that are not intended to end up in the script
+%%--- sheet number for theorem counter
+% Start for Sheet 14
+\newcommand{\vp}{\mathbf{p}}
+\newcommand{\vh}{\mathbf{h}}
+\newcommand{\ve}{\mathbf{e}}
+\newcommand{\T}{\mathscr{T}}
+\newcommand{\Q}{\mathbf{Q}}
+\newcommand{\Pb}{\mathbf{P}}
+\newcommand{\Vrest}{V_{rest}}
+\newcommand{\Vth}{V_{th}}
+\newcommand{\tref}{\tau_{ref}}
+% End for Sheet 14
+\setcounter{theorem}{1}
+\setcounter{equation}{1}
+
+% \bibliographystyle{apalike}
+% \setcitestyle{authoryear, open={((},close={))}
+
+\title{}
+\author{Antony Simonoff, David Freedman}
+\date{December 30 2020}
+
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Face the Music}
+            
+        \vspace{0.5cm}
+        \LARGE
+            
+        \vspace{1.5cm}
+            
+        \textbf{Amelia Simonoff}
+        
+        \textbf{12/30/2020}
+            
+        \vfill
+            
+        A thesis presented for the degree of\\
+        \textbf{Bachelor of Art} \\
+        At
+        
+        \vspace{0.8cm}
+            
+        % \includegraphics[width=0.8\textwidth]{img/logo.rgb.maroon.png}
+
+        \Large
+            
+    \end{center}
+\end{titlepage}
+
+\section{}
+
+\end{document}

@@ -7,7 +7,7 @@ from queue import Empty, Full
 
 # Function for video playback loop. Called by multiprocess
 
-def video_loop(video_q, data_q, emotion_q):
+def video_loop(video_to_data_q, data_to_video_q, music_to_video_q_1, music_to_video_q_2):
     
     print("Video loops started")
 
@@ -19,6 +19,8 @@ def video_loop(video_q, data_q, emotion_q):
     cv2.imshow('Emotional Window', frame)
 
     emotion_label = "Emotions loading..."
+    music_label = "Music loading..."
+    countdown = "Countdown loading..."
 
     while(True):
         # tic = time.time()
@@ -29,18 +31,43 @@ def video_loop(video_q, data_q, emotion_q):
 
         # only pull emotion data from data queue when present. Max size of 1.
         try: 
-            emotion_label = emotion_q.get(block = False)
+            emotion_label = data_to_video_q.get(block = False)
+        except:
+            pass
+        try:
+            music_label = music_to_video_q_1.get(block = False)
+        except:
+            pass
+        try:
+            countdown = music_to_video_q_2.get(block = False)
         except:
             pass
 
         window_data = cv2.getWindowImageRect('Emotional Window') # returns 4-tuple with (x, y, width, height)
         # put emotions data to screen
-        frame = cv2.putText(frame, emotion_label, (int(window_data[2] / 6), int(window_data[3] / 6)), cv2.FONT_HERSHEY_PLAIN, 3, (0, 0, 0), 3)
+        if emotion_label != "Emotions loading...":
+            frame = cv2.putText(frame, "You are:", (int(window_data[2] / 8), int(window_data[3] / 8)), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 0), 3)
+            frame = cv2.putText(frame, emotion_label, (int(window_data[2] / 8), int(window_data[3] * 1.75 / 8)), cv2.FONT_HERSHEY_PLAIN, 2, (255, 215, 0), 3)
+        else:
+            frame = cv2.putText(frame, "Emotions", (int(window_data[2] / 8), int(window_data[3] / 8)), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 0), 3)
+            frame = cv2.putText(frame, "Loading...", (int(window_data[2] / 8), int(window_data[3] * 1.75/ 8)), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 0), 3)
+        
+        if music_label != "Music loading...":
+            frame = cv2.putText(frame, "Playing", (int(window_data[2] * 6 / 8), int(window_data[3] / 8)), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 0), 3)
+            frame = cv2.putText(frame, music_label, (int(window_data[2] * 6 / 8), int(window_data[3] * 1.75 / 8)), cv2.FONT_HERSHEY_PLAIN, 2, (255, 215, 0), 3)
+            frame = cv2.putText(frame, "music for", (int(window_data[2] * 6 / 8), int(window_data[3] * 2.5 / 8)), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 0), 3)
+            if countdown != "Countdown loading...":
+                frame = cv2.putText(frame, countdown, (int(window_data[2] * 6 / 8), int(window_data[3] * 3.25 / 8)), cv2.FONT_HERSHEY_PLAIN, 2, (255, 215, 0), 3)
+                frame = cv2.putText(frame, "seconds", (int(window_data[2] * 6 / 8), int(window_data[3] * 4 / 8)), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 0), 3)
+        else:
+            frame = cv2.putText(frame, "Music", (int(window_data[2] * 6 / 8), int(window_data[3] / 8)), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 0), 3)
+            frame = cv2.putText(frame, "Loading", (int(window_data[2] * 6 / 8), int(window_data[3] * 1.75 / 8)), cv2.FONT_HERSHEY_PLAIN, 2, (0, 0, 0), 3)
+        
         cv2.imshow('Emotional Window', frame) # render
 
         # only put image frame into the video queue when empty. Max size of 1.
         try:
-            video_q.put(frame, block = False)
+            video_to_data_q.put(frame, block = False)
         except:
             pass
 
@@ -54,11 +81,11 @@ def video_loop(video_q, data_q, emotion_q):
 
     # After quitting loop release capture object
     vid.release()
-    video_q.put("STOP") # communicate to analysis loop
+    video_to_data_q.put("STOP") # communicate to analysis loop
     # Destroy all the windows
     cv2.destroyAllWindows()
 
-def analysis_loop(video_q, data_q, emotion_q):
+def analysis_loop(video_to_data_q, data_to_music_q, data_to_video_q):
 
     print("Emotion analysis loop started")
 
@@ -69,23 +96,23 @@ def analysis_loop(video_q, data_q, emotion_q):
         # pull frame from queue
         # only pull from video queue when there is a frame present there
         try:
-            analysis_frame = video_q.get(block = False)
+            analysis_frame = video_to_data_q.get(block = False)
 
             if analysis_frame == "STOP": # stop if STOP sent from camera
                 print("stopping analysis loop")
-                # data_q.get() # TODO: Change to clear queue
-                data_q.put("STOP") # Send stop to music loop
+                # data_to_music_q.get() # TODO: Change to clear queue
+                data_to_music_q.put("STOP") # Send stop to music loop
                 break
 
             data = DeepFace.analyze(analysis_frame, actions = ['emotion'], enforce_detection = False) # TODO: enforce detection, print something when no face
 
             # only put data when queue is empty
             try:
-                data_q.put(data['dominant_emotion'], block = False)
+                data_to_music_q.put(data['dominant_emotion'], block = False)
             except:
                 pass
             try:
-                emotion_q.put(data['dominant_emotion'], block = False)
+                data_to_video_q.put(data['dominant_emotion'], block = False)
             except:
                 pass
 
@@ -94,10 +121,11 @@ def analysis_loop(video_q, data_q, emotion_q):
         except:
             pass
 
-def music_loop(data_q, pause_time, emotion_params, genre_overlap, user_top_songs, user_top_artists, user_country, sp):
+def music_loop(data_to_music_q, music_to_video_q_1, music_to_video_q_2, pause_time, emotion_params, genre_overlap, user_top_songs, user_top_artists, user_country, sp):
 
     print("Music generation loop started")
 
+    current_emotion = "Emotions loading..."
     previous_emotion = "Placeholder"
 
     while(True):
@@ -107,7 +135,7 @@ def music_loop(data_q, pause_time, emotion_params, genre_overlap, user_top_songs
         # TODO: Fix loop ordering
         try:
             try:
-                current_emotion = data_q.get(block = False)
+                current_emotion = data_to_music_q.get(block = False)
             except:
                 pass
 
@@ -118,9 +146,6 @@ def music_loop(data_q, pause_time, emotion_params, genre_overlap, user_top_songs
 
                 previous_emotion = current_emotion
                 current_emotion_params = emotion_params[current_emotion]
-                # print(current_emotion_params)
-
-                # print(current_emotion_params)
                 print(current_emotion)
 
                 # Get seeds for songs, artists, genres
@@ -143,7 +168,7 @@ def music_loop(data_q, pause_time, emotion_params, genre_overlap, user_top_songs
                 recs = sp.recommendations(seed_artists = artist_seed, seed_genres = (genre_seeds), seed_tracks = song_seed, \
                     country = {user_country}, **current_emotion_params)
                 # print(recs)
-                print(np.size(recs['tracks']))
+                # print(np.size(recs['tracks']))
 
                 # Choose song and play it
                 song = np.random.choice(recs['tracks'])
@@ -151,9 +176,13 @@ def music_loop(data_q, pause_time, emotion_params, genre_overlap, user_top_songs
                 offset = np.random.randint(song_duration // 6, song_duration // 3)
                 sp.start_playback(uris = [song['uri']], position_ms = offset)
 
-                print(sp.audio_features(song['uri']))
+                music_to_video_q_1.put(current_emotion, block = False)
 
-                time.sleep(pause_time)
+                # print(sp.audio_features(song['uri']))
+
+                for i in reversed(range(pause_time)):
+                    music_to_video_q_2.put(str(i+1), block = False)
+                    time.sleep(1)
                 
         except Exception as e:
             print(e)
