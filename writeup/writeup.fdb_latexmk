@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber writeup"] 1646758111 "writeup.bcf" "writeup.bbl" "writeup" 1646785524
-  "writeup.bcf" 1646785523 106688 8e74176f6e1f1102dfad16f8f639344b "pdflatex"
+["biber writeup"] 1646786016 "writeup.bcf" "writeup.bbl" "writeup" 1646786851
+  "writeup.bcf" 1646786850 106688 8e74176f6e1f1102dfad16f8f639344b "pdflatex"
   (generated)
   "writeup.bbl"
   "writeup.blg"
-["pdflatex"] 1646785515 "c:/Users/Antony/Documents/uChicago/Winter 2022/Music Thesis/writeup/writeup.tex" "writeup.pdf" "writeup" 1646785524
-  "c:/Users/Antony/Documents/uChicago/Winter 2022/Music Thesis/writeup/writeup.tex" 1646785505 4555 a40a2f6434d5ec8dc1ef8ffebd5e05b7 ""
+["pdflatex"] 1646786845 "c:/Users/Antony/Documents/uChicago/Winter 2022/Music Thesis/writeup/writeup.tex" "writeup.pdf" "writeup" 1646786851
+  "c:/Users/Antony/Documents/uChicago/Winter 2022/Music Thesis/writeup/writeup.tex" 1646786842 5493 da4f88c34d290f39dd88c32a48be27c5 ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1646686668 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1646685684 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1646685684 1288 655e228510b4c2a1abe905c368440826 ""
@@ -96,11 +96,11 @@
   "c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1646690533 4374526 ee30a036c35dd2df8bc1a10abaa94034 ""
   "c:/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1646690732 1540265 aa265309efd10c82689d42b91e3812ad ""
   "c:/texlive/2021/texmf.cnf" 1646690485 713 e69b156964470283e0530f5060668171 ""
-  "writeup.aux" 1646785523 892 9ec97c80947cd8ec03481c7514b0fdf0 "pdflatex"
-  "writeup.bbl" 1646758115 486 ee04f40f768daeed26442158e95aba61 "biber writeup"
-  "writeup.out" 1646785523 35 9534070c232aa0a3f935cb7c3e3f8d46 "pdflatex"
-  "writeup.run.xml" 1646785523 2325 4010913598a07ce8f21320b334d82489 "pdflatex"
-  "writeup.tex" 1646785505 4555 a40a2f6434d5ec8dc1ef8ffebd5e05b7 ""
+  "writeup.aux" 1646786850 1007 c02efa4adda233cdc04d4f27970d7e3f "pdflatex"
+  "writeup.bbl" 1646786025 486 ee04f40f768daeed26442158e95aba61 "biber writeup"
+  "writeup.out" 1646786850 176 c12a6bdf3906708c0fbbae320671da47 "pdflatex"
+  "writeup.run.xml" 1646786850 2325 4010913598a07ce8f21320b334d82489 "pdflatex"
+  "writeup.tex" 1646786842 5493 da4f88c34d290f39dd88c32a48be27c5 ""
   (generated)
   "writeup.aux"
   "writeup.bcf"

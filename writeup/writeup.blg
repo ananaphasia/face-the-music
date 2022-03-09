@@ -1,9 +1,9 @@
-[1] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:307> INFO - This is Biber 2.17
 [1] Config.pm:310> INFO - Logfile is 'writeup.blg'
-[351] biber-MSWIN32:340> INFO - === 
-[479] Biber.pm:418> INFO - Reading 'writeup.bcf'
-[758] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
-[792] bbl.pm:654> INFO - Writing 'writeup.bbl' with encoding 'UTF-8'
-[793] bbl.pm:757> INFO - Output to writeup.bbl
-[793] Biber.pm:130> WARN - The file 'writeup.bcf' does not contain any citations!
-[794] Biber.pm:132> INFO - WARNINGS: 1
+[966] biber-MSWIN32:340> INFO - === 
+[1187] Biber.pm:418> INFO - Reading 'writeup.bcf'
+[1870] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
+[2032] bbl.pm:654> INFO - Writing 'writeup.bbl' with encoding 'UTF-8'
+[2033] bbl.pm:757> INFO - Output to writeup.bbl
+[2048] Biber.pm:130> WARN - The file 'writeup.bcf' does not contain any citations!
+[2049] Biber.pm:132> INFO - WARNINGS: 1

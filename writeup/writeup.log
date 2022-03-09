@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.7)  8 MAR 2022 18:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.7)  8 MAR 2022 18:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -606,27 +606,27 @@ Package biblatex Info: Reference segment=0 on input line 154.
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.189 \end{document}
+l.198 \end{document}
                      [1] (./writeup.aux)
 Package rerunfilecheck Info: File `writeup.out' has not changed.
-(rerunfilecheck)             Checksum: 9534070C232AA0A3F935CB7C3E3F8D46;35.
+(rerunfilecheck)             Checksum: C12A6BDF3906708C0FBBAE320671DA47;176.
 Package logreq Info: Writing requests to 'writeup.run.xml'.
 \openout1 = `writeup.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18019 strings out of 479646
- 313545 string characters out of 5885845
- 1011665 words of memory out of 5000000
- 35805 multiletter control sequences out of 15000+600000
+ 18021 strings out of 479646
+ 313565 string characters out of 5885845
+ 1012666 words of memory out of 5000000
+ 35806 multiletter control sequences out of 15000+600000
  471076 words of font info for 34 fonts, out of 8000000 for 9000
  452 hyphenation exceptions out of 8191
  60i,5n,68p,810b,801s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on writeup.pdf (2 pages, 32470 bytes).
+Output written on writeup.pdf (2 pages, 44990 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 9 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 PDF objects out of 1000 (max. 8388607)
+ 32 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 500000)
+ 17 words of extra memory for PDF output out of 10000 (max. 10000000)
 
