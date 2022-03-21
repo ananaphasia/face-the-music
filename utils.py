@@ -142,43 +142,42 @@ def music_loop(data_to_music_q, music_to_video_q_1, music_to_video_q_2, pause_ti
             if current_emotion == "STOP": # Stop sent from data loop
                 break
 
-            if current_emotion != "Emotions loading..." and current_emotion != previous_emotion: # Makes sure data loop initialized and is not the same emotion
+            if current_emotion != "Emotions loading...": # Makes sure data loop initialized
 
-                previous_emotion = current_emotion
-                current_emotion_params = emotion_params[current_emotion]
-                print(current_emotion)
+                if current_emotion != previous_emotion: # Checks if emotion has changed
+                    previous_emotion = current_emotion
+                    current_emotion_params = emotion_params[current_emotion]
+                    print(current_emotion)
 
-                # Get seeds for songs, artists, genres
-                if np.random.rand() < 0.5:
-                    song_seed = {np.random.choice(user_top_songs['items'])['uri']}
-                else:
-                    song_seed = []
-                
-                if np.random.rand() < 0.5:
-                    artist_seed = {np.random.choice(user_top_artists['items'])['uri']}
-                else:
-                    artist_seed = []
+                    # Get seeds for songs, artists, genres
+                    if np.random.rand() < 0.5:
+                        song_seed = {np.random.choice(user_top_songs['items'])['uri']}
+                    else:
+                        song_seed = []
+                    
+                    if np.random.rand() < 0.5:
+                        artist_seed = {np.random.choice(user_top_artists['items'])['uri']}
+                    else:
+                        artist_seed = []
 
-                if np.random.rand() < 0.5 and np.size(genre_overlap) > 1:
-                    genre_seeds = list(np.random.choice(genre_overlap, 2))
-                else: 
-                    genre_seeds = list(np.random.choice(genre_overlap, 1))
+                    if np.random.rand() < 0.5 and np.size(genre_overlap) > 1:
+                        genre_seeds = list(np.random.choice(genre_overlap, 2))
+                    else: 
+                        genre_seeds = list(np.random.choice(genre_overlap, 1))
 
-                # Get recommendations 
-                recs = sp.recommendations(seed_artists = artist_seed, seed_genres = (genre_seeds), seed_tracks = song_seed, \
-                    country = {user_country}, **current_emotion_params)
-                # print(recs)
-                # print(np.size(recs['tracks']))
+                    # Get recommendations 
+                    recs = sp.recommendations(seed_artists = artist_seed, seed_genres = (genre_seeds), seed_tracks = song_seed, \
+                        country = {user_country}, **current_emotion_params)
 
-                # Choose song and play it
-                song = np.random.choice(recs['tracks'])
-                song_duration = song['duration_ms']
-                offset = np.random.randint(song_duration // 6, song_duration // 3)
-                sp.start_playback(uris = [song['uri']], position_ms = offset)
+                    # Choose song and play it
+                    song = np.random.choice(recs['tracks'])
+                    song_duration = song['duration_ms']
+                    offset = np.random.randint(song_duration // 6, song_duration // 3)
+                    sp.start_playback(uris = [song['uri']], position_ms = offset)
 
-                music_to_video_q_1.put(current_emotion, block = False)
+                    music_to_video_q_1.put(current_emotion, block = False)
 
-                # print(sp.audio_features(song['uri']))
+                    # print(sp.audio_features(song['uri']))
 
                 for i in reversed(range(pause_time)):
                     music_to_video_q_2.put(str(i+1), block = False)

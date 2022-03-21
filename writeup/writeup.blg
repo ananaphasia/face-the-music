@@ -1,9 +1,16 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
-[1] Config.pm:310> INFO - Logfile is 'writeup.blg'
-[966] biber-MSWIN32:340> INFO - === 
-[1187] Biber.pm:418> INFO - Reading 'writeup.bcf'
-[1870] Biber.pm:972> INFO - Found 0 citekeys in bib section 0
-[2032] bbl.pm:654> INFO - Writing 'writeup.bbl' with encoding 'UTF-8'
-[2033] bbl.pm:757> INFO - Output to writeup.bbl
-[2048] Biber.pm:130> WARN - The file 'writeup.bcf' does not contain any citations!
-[2049] Biber.pm:132> INFO - WARNINGS: 1
+[0] Config.pm:310> INFO - Logfile is 'writeup.blg'
+[236] biber-MSWIN32:340> INFO - === 
+[360] Biber.pm:418> INFO - Reading 'writeup.bcf'
+[782] Biber.pm:969> INFO - Using all citekeys in bib section 0
+[836] Biber.pm:4383> INFO - Processing section 0
+[868] Biber.pm:4574> INFO - Looking for bibtex file 'ref.bib' for section 0
+[962] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1014] bibtex.pm:1518> INFO - Found BibTeX data source 'ref.bib'
+[1206] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1207] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'level = 4' with 'level = 2'
+[1207] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1207] Biber.pm:4203> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'en-US'
+[1207] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[1215] bbl.pm:654> INFO - Writing 'writeup.bbl' with encoding 'UTF-8'
+[1218] bbl.pm:757> INFO - Output to writeup.bbl

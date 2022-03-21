@@ -16,5 +16,81 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{hawking1988}{book}{}
+      \name{author}{2}{}{%
+        {{hash=96ad97effcf8ad2784969f06c6ead9e5}{%
+           family={Justin},
+           familyi={J\bibinitperiod},
+           given={Patrick\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=5295bf9e9036af311da830f982953cf3}{%
+           family={Sloboda},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{2b862f2d7bf7a7d3cf6debb600147464}
+      \strng{fullhash}{2b862f2d7bf7a7d3cf6debb600147464}
+      \strng{bibnamehash}{2b862f2d7bf7a7d3cf6debb600147464}
+      \strng{authorbibnamehash}{2b862f2d7bf7a7d3cf6debb600147464}
+      \strng{authornamehash}{2b862f2d7bf7a7d3cf6debb600147464}
+      \strng{authorfullhash}{2b862f2d7bf7a7d3cf6debb600147464}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Testing testing 123}
+      \field{title}{Handbook of music and emotion: theory, research, applications}
+      \field{year}{2010}
+      \true{nocite}
+    \endentry
+    \entry{sundberg1983}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a0cc6c0bb298b3ac888cbae6e9019a32}{%
+           family={Sundberg},
+           familyi={S\bibinitperiod},
+           given={Johan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=9f51cfcb873ab5c9c33eeef298e3da37}{%
+           family={Clynes},
+           familyi={C\bibinitperiod},
+           given={Manfred},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {New South Wales State Conservatorium of Music}%
+      }
+      \strng{namehash}{a0cc6c0bb298b3ac888cbae6e9019a32}
+      \strng{fullhash}{a0cc6c0bb298b3ac888cbae6e9019a32}
+      \strng{bibnamehash}{a0cc6c0bb298b3ac888cbae6e9019a32}
+      \strng{authorbibnamehash}{a0cc6c0bb298b3ac888cbae6e9019a32}
+      \strng{authornamehash}{a0cc6c0bb298b3ac888cbae6e9019a32}
+      \strng{authorfullhash}{a0cc6c0bb298b3ac888cbae6e9019a32}
+      \strng{editorbibnamehash}{9f51cfcb873ab5c9c33eeef298e3da37}
+      \strng{editornamehash}{9f51cfcb873ab5c9c33eeef298e3da37}
+      \strng{editorfullhash}{9f51cfcb873ab5c9c33eeef298e3da37}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Emotions passed from the voice. Vocal emotions irrespective of culture and language of origin.}
+      \field{chapter}{VII: Speech, Song, and Emotions}
+      \field{title}{Music, Mind, and Brain: The Neuropsychology of Music}
+      \field{year}{1983}
+      \true{nocite}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

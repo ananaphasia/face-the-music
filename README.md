@@ -21,3 +21,7 @@ Current facial recognition technology has progressed to the point that it can be
   - [ ] Integrate with frontotemporal dementia (FTD) early recognition research
 
 ## Further Reading
+
+## License
+
+See the LICENSE file for license rights and limitations (GNU GPLv3). 

@@ -29,20 +29,24 @@
 \usepackage{bm}
 \usepackage{calc}
 
-\usepackage[
-backend=biber,
-style=authoryear,
-bibstyle=authoryear,
-sorting=nty,
-maxbibnames=20,
-maxcitenames=2,
-giveninits = true,
-terseinits=true,
-uniquename=false
-]{biblatex}
+% \usepackage[
+% backend=biber,
+% style=annotate,
+% bibstyle=annotate,
+% sorting=nty,
+% maxbibnames=20,
+% maxcitenames=2,
+% giveninits = true,
+% terseinits=true,
+% uniquename=false
+% ]{biblatex}
+\usepackage[notes,backend=biber,isbn=false,annotation]{biblatex-chicago}
 \addbibresource{ref.bib}
 \DeclareNameAlias{sortname}{family-given}
 \renewcommand*{\revsdnamepunct}{}
+
+\usepackage{listings}
+\usepackage{ulem}
 
 % \usepackage{lineno}
 % \linenumbers
@@ -173,11 +177,11 @@ uniquename=false
             
         A thesis presented for the degree of\\
         \textbf{Bachelor of Arts in Music} \\
-        At
+        At the
         
         \vspace{0.8cm}
             
-        % \includegraphics[width=0.8\textwidth]{img/logo.rgb.maroon.png}
+        \includegraphics[width=0.9\textwidth]{UChicago_College_Horizontal_Color_RGB.png}
 
         \Large
             
@@ -193,6 +197,327 @@ I set up this project on a Raspberry Pi, continually running a Python script tha
 
 \section{Background}
 
-Facial recognition software has been available for the past DECADE (cite), and its implementations in the modern day are not without controversy. 
+Music and emotions have been indelibly linked throughout human history. From the first chants to pop songs, music has evoked emotions in its listeners since time immemorial. Here, I was interested in the other direction: what if we create music based on an emotion, instead of the other way around?
+
+To answer that question, then, I needed a way to read the emotions of users in near real-time, and then a way to either synthesize music of a certain emotion or pull from an already-existing database. I knew that facial recognition software could accomplish the first step, and so I chose to use a pre-trained model.
+
+Facial recognition software has been available for the past DECADE (citation), and its implementations in the modern day are not without controversy. However, much research has been done on facial recognition, and current implementations are incredibly lightweight, especially using pre-trained models. 
+
+Unfortunately, real-time music synthesis is not yet available. While artificial-intelligence based musical synthesis has already passed the Turing Test (citation), the models are not quite versatile enough yet to produce a continuous stream of music with changing input parameters (i.e., the emotion of the user). As such, I decided to use a corpus of music that is already labeled, which is found in many streaming services, such as \href{https://www.apple.com/apple-music/}{Apple Music} or \href{https://www.spotify.com/us/}{Spotify}.
+
+Spotify, the most-used music streaming service in the world (\href{https://www.midiaresearch.com/blog/music-subscriber-market-shares-q2-2021}{citation}), has many playlists with emotional labels, such as "Happy Beats" or "Sad Piano", etc.. However, Spotify does not label their music based on emotion outright, and instead classifies music by a large variety of parameters (see \hyperref[sec:methods]{Methods}). 
+
+CONCLUSION
+
+\section[sec:sig_stat]{Significance Statement}
+
+Music is cool facial recognition is dope something about fronto-temporal dementia
+
+\section[sec:methods]{Methods}
+\label{sec:methods}
+
+This project is running on a Python backend with a Node.js environment communicating to a React application to output the music to a browser. The general overview of the project is outlined in Figure 1 (INSERT FLOWCHART). 
+
+I use a Python environment running \href{https://pypi.org/project/opencv-python/}{OpenCV} to pull video data from the webcam. Each frame is passed to \href{https://pypi.org/project/deepface/}{DeepFace}, which is a wrapper for multiple state-of-the-art emotion recognition models. I rewrote the code for real-time analysis of incoming video frames. 
+
+Each frame is classified by the probability that it is one of the following emotions: \texttt{angry, disgusted, scared, happy, sad, surprised}, and \texttt{neutral} (citation). Then, the most likely emotion is chosen as the \texttt{dominant emotion}, which is then sent for downstream processing.
+
+Each video frame is also rendered, and a user's emotion, if available, is displayed on the frame. Pulling and rendering video frames takes significantly less time than analyzing an emotion in a frame, so both processes (known as workers for \href{https://docs.python.org/3/library/multiprocessing.html}{multiprocessing}) run asynchronously and communicate using a  \href{https://docs.python.org/3/library/queue.html}{Queue} datastructure. 
+
+Parsed emotions are also passed to a third worker, which communicates with Spotify through the \href{https://developer.spotify.com/documentation/web-api/}{Spotify Web API}. Upon initialization, the worker authenticates the user using the Spotify OAuth service, and then pulls the user's top songs and artists. The worker then makes a list of the genres of the user's top songs, and compares it with the available genres for recommendation, which is used as a mask. 
+
+After initialization, the worker loads the parameters for the recommendation request for each emotion. Every ten seconds, the worker queries Spotify for a list of recommendations given a random number of user top sonsg, artists, and genres as seeds, as well as the parameters given by the current emotion. The worker then plays a randomly chosen song from the returned list of suggestions, starting between one-sixth and one-third of the way through the song.\footnote{I chose these values because they are close to the start of the song but are past any lead-ins or introns, which might not accurately represent the emotion codified by the song.} 
+
+The tunable parameters that I chose for each emotion for the \href{https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recommendationsrecommendation}{recommendations query} from Spotify are as follows. Each parameter has a maximum, minimum, and target value (e.g. \texttt{min\char`_acousticness}, \texttt{max\char`_danceability}, \texttt{target\char`_valence} ): \texttt{acousticness, danceability, energy, instrumentalness, liveness, loudness, popularity, speechiness, tempo}, and \texttt{valence}. See the \hyperref[subsec:params]{supplemental material} for the tuned parameters for each emotion.
+
+Concurrently, a Node.js process supporting a React application is running to display the \href{https://developer.spotify.com/documentation/web-playback-sdk/}{Spotify Web Playback SDK} in a browser. The backend once again authorizes the user, and the browser functions as a device for Spotify playback, which is used as the default playback destination for the Spotify worker. 
+
+\section[sec:code_availability]{Code Availability}
+
+The code is available on \href{https://github.com/as4mo3/face-the-music/}{Github} under the GNU General Public License, version 3. 
+
+\section[sec:observations]{Observations}
+\label{observations}
+
+hehe look at all those \sout{monkeys} people controlling this with their face hehe
+
+\section[sec:discussion]{Discussion}
+\label{discussion}
+
+\section[sec:conclusion]{Conclusion}
+\label{conclusion}
+
+% \section{References}
+
+% add the Bibliography to the  of Contents
+\cleardoublepage
+\ifdefined\phantomsection
+  \phantomsection  % makes hyperref recognize this section properly for pdf link
+\else
+\fi
+
+% include your .bib file
+% \bibliography{ref}
+\nocite{*} % include entire bibliography, including things that aren't cited
+\printbibliography
+
+
+\section[sec:supp_mat]{Supplemental Material}
+\label{sec:supp_mat}
+
+\subsection[subsec:params]{Tuned Parameters}
+\label{subsec:params}
+
+\begin{lstlisting}[language=Python]
+
+# emotion_labels = ['angry', 'disgusted', 'scared', \
+#    'happy', 'sad', 'surprised', 'neutral']
+    
+angry_params = {
+    'min_acousticness': 0,
+    'min_danceability': 0.2,
+    'min_energy': 0.4,
+    'min_instrumentalness': 0,
+    'min_liveness': 0,
+    'min_loudness': -60,
+    'min_popularity': 0,
+#     'min_speechiness': 0,
+    'min_tempo': 80,
+    'min_valence': 0,
+    
+    'max_acousticness': 0.8,
+    'max_danceability': 0.65,
+    'max_energy': 1,
+    'max_instrumentalness': 1,
+    'max_liveness': 0.4,
+    'max_loudness': 0,
+    'max_popularity': 100,
+    'max_speechiness': 1,
+#     'max_tempo': 120,
+    'max_valence': 0.6,
+    
+    'target_acousticness': 0.3,
+    'target_danceability': 0.4,
+    'target_energy': 0.65,
+    'target_instrumentalness': 0.5,
+    'target_liveness': 0.5,
+#     'target_loudness': -60,
+#     'target_popularity': 0.5,
+    'target_speechiness': 0.2,
+    'target_tempo': 140,
+    'target_valence': 0.2    
+}
+
+disgusted_params = {
+    'min_acousticness': 0,
+    'min_danceability': 0.2,
+    'min_energy': 0.4,
+    'min_instrumentalness': 0,
+    'min_liveness': 0,
+    'min_loudness': -60,
+    'min_popularity': 0,
+    'min_speechiness': 0,
+    'min_tempo': 0,
+    'min_valence': 0,
+    
+    'max_acousticness': 1,
+    'max_danceability': 0.6,
+    'max_energy': 0.7,
+    'max_instrumentalness': 1,
+    'max_liveness': 0.4,
+    'max_loudness': 0,
+#     'max_popularity': 100,
+    'max_speechiness': 1,
+    'max_tempo': 120,
+    'max_valence': 0.5,
+    
+#     'target_acousticness': 0.5,
+    'target_danceability': 0.4,
+    'target_energy': 0.55,
+    'target_instrumentalness': 0.5,
+    'target_liveness': 0.5,
+    'target_loudness': -60,
+#     'target_popularity': 0.5,
+    'target_speechiness': 0.5,
+#     'target_tempo': 0.5,
+    'target_valence': 0.2
+}
+
+scared_params = {
+    'min_acousticness': 0,
+    'min_danceability': 0,
+    'min_energy': 0,
+    'min_instrumentalness': 0,
+    'min_liveness': 0,
+    'min_loudness': -60,
+    'min_popularity': 0,
+    'min_speechiness': 0,
+    'min_tempo': 0,
+    'min_valence': 0,
+    
+    'max_acousticness': 1,
+    'max_danceability': 0.4,
+    'max_energy': 0.5,
+    'max_instrumentalness': 1,
+    'max_liveness': 0.4,
+#     'max_loudness': 0,
+#     'max_popularity': 100,
+    'max_speechiness': 0.5,
+    'max_tempo': 120,
+    'max_valence': 0.6,
+    
+    'target_acousticness': 0.5,
+    'target_danceability': 0.2,
+    'target_energy': 0.3,
+    'target_instrumentalness': 0.5,
+    'target_liveness': 0.5,
+    'target_loudness': -60,
+#     'target_popularity': 0.5,
+    'target_speechiness': 0.5,
+#     'target_tempo': 0.5,
+    'target_valence': 0.35    
+}
+
+happy_params = {
+    'min_acousticness': 0,
+    'min_danceability': 0.5,
+    'min_energy': 0.5,
+    'min_instrumentalness': 0,
+    'min_liveness': 0,
+    'min_loudness': -60,
+#     'min_popularity': 0,
+    'min_speechiness': 0,
+    'min_tempo': 60,
+    'min_valence': 0.4,
+    
+    'max_acousticness': 1,
+    'max_danceability': 1,
+    'max_energy': 1,
+    'max_instrumentalness': 1,
+    'max_liveness': 0.4,
+    'max_loudness': 0,
+    'max_popularity': 100,
+    'max_speechiness': 1,
+    'max_tempo': 120,
+    'max_valence': 1,
+    
+#     'target_acousticness': 0.5,
+    'target_danceability': 0.8,
+    'target_energy': 0.8,
+#     'target_instrumentalness': 0.5,
+    'target_liveness': 0.3,
+#     'target_loudness': -60,
+#     'target_popularity': 0.5,
+#     'target_speechiness': 0.5,
+#     'target_tempo': 0.5,
+    'target_valence': 0.8    
+}
+
+sad_params = {
+    'min_acousticness': 0,
+    'min_danceability': 0,
+    'min_energy': 0,
+    'min_instrumentalness': 0,
+    'min_liveness': 0,
+    'min_loudness': -60,
+    'min_popularity': 0,
+#     'min_speechiness': 0,
+    'min_tempo': 0,
+    'min_valence': 0,
+    
+    'max_acousticness': 1,
+    'max_danceability': 0.4,
+    'max_energy': 0.5,
+    'max_instrumentalness': 1,
+    'max_liveness': 0.4,
+    'max_loudness': 0,
+#     'max_popularity': 100,
+    'max_speechiness': 1,
+    'max_tempo': 120,
+    'max_valence': 0.4,
+    
+    'target_acousticness': 0.6,
+    'target_danceability': 0.2,
+    'target_energy': 0.2,
+    'target_instrumentalness': 0.8,
+    'target_liveness': 0.3,
+#     'target_loudness': -60,
+#     'target_popularity': 0.5,
+    'target_speechiness': 0.5,
+    'target_tempo': 80,
+    'target_valence': 0.2  
+}
+
+surprised_params = {
+    'min_acousticness': 0.3,
+    'min_danceability': 0.4,
+    'min_energy': 0.3,
+#     'min_instrumentalness': 0,
+    'min_liveness': 0,
+    'min_loudness': -60,
+    'min_popularity': 0,
+    'min_speechiness': 0,
+    'min_tempo': 0,
+    'min_valence': 0.2,
+    
+    'max_acousticness': 1,
+    'max_danceability': 0.6,
+    'max_energy': 0.8,
+    'max_instrumentalness': 1,
+    'max_liveness': 0.4,
+    'max_loudness': 0,
+    'max_popularity': 100,
+    'max_speechiness': 1,
+#     'max_tempo': 120,
+    'max_valence': 1,
+    
+    'target_acousticness': 0.5,
+    'target_danceability': 0.5,
+    'target_energy': 0.5,
+    'target_instrumentalness': 0.5,
+    'target_liveness': 0.5,
+    'target_loudness': -60,
+#     'target_popularity': 0.5,
+    'target_speechiness': 0.5,
+    'target_tempo': 108,
+    'target_valence': 0.5    
+}
+
+neutral_params = {
+    'min_acousticness': 0,
+    'min_danceability': 0,
+    'min_energy': 0.3,
+    'min_instrumentalness': 0,
+    'min_liveness': 0,
+    'min_loudness': -60,
+    'min_popularity': 0,
+    'min_speechiness': 0,
+    'min_tempo': 0,
+    'min_valence': 0.3,
+    
+    'max_acousticness': 0.8,
+    'max_danceability': 0.5,
+    'max_energy': 0.7,
+    'max_instrumentalness': 1,
+    'max_liveness': 0.2,
+    'max_loudness': 0,
+    'max_popularity': 100,
+    'max_speechiness': 0.6,
+    'max_tempo': 140,
+    'max_valence': 0.7,
+    
+    'target_acousticness': 0.5,
+    'target_danceability': 0.4,
+    'target_energy': 0.5,
+    'target_instrumentalness': 0.5,
+    'target_liveness': 0.5,
+    'target_loudness': -60,
+#     'target_popularity': 0.5,
+    'target_speechiness': 0.5,
+#     'target_tempo': 0.5,
+    'target_valence': 0.45    
+}
+
+\end{lstlisting}
 
 \end{document}
