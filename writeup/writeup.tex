@@ -151,8 +151,8 @@
 % \setcitestyle{authoryear, open={((},close={))}
 
 \title{}
-\author{Amelia Simonoff, David Freedman}
-\date{December 30 2020}
+\author{Amelia Simonoff}
+\date{MONTH DD 2022}
 
 
 \begin{document}
@@ -190,6 +190,8 @@
 
 \section{Abstract}
 
+Since time immemorial, music has both elicited and strengthened emotions. 
+
 Current facial recognition technology has progressed to the point that it can be done in nearly real-time. In this project, I use the Python library \href{https://pypi.org/project/deepface/}{DeepFace} to read peoples' emotions in real-time, and then the Spotify \href{https://developer.spotify.com/documentation/web-api/reference/}{Web API} and \href{https://developer.spotify.com/documentation/web-playback-sdk/reference/}{Web Playback SDK} to play music related to those emotions.
 
 I set up this project on a Raspberry Pi, continually running a Python script that reads data from the camera and then pulls data from Spotify. I then set up the Raspberry Pi in the Media Arts, Data, and Design (MADD) Center at the University of Chicago. 
@@ -205,16 +207,16 @@ Facial recognition software has been available for the past DECADE (citation), a
 
 Unfortunately, real-time music synthesis is not yet available. While artificial-intelligence based musical synthesis has already passed the Turing Test (citation), the models are not quite versatile enough yet to produce a continuous stream of music with changing input parameters (i.e., the emotion of the user). As such, I decided to use a corpus of music that is already labeled, which is found in many streaming services, such as \href{https://www.apple.com/apple-music/}{Apple Music} or \href{https://www.spotify.com/us/}{Spotify}.
 
-Spotify, the most-used music streaming service in the world (\href{https://www.midiaresearch.com/blog/music-subscriber-market-shares-q2-2021}{citation}), has many playlists with emotional labels, such as "Happy Beats" or "Sad Piano", etc.. However, Spotify does not label their music based on emotion outright, and instead classifies music by a large variety of parameters (see \hyperref[sec:methods]{Methods}). 
+Spotify, the most-used music streaming service in the world (\href{https://www.midiaresearch.com/blog/music-subscriber-market-shares-q2-2021}{citation}), has many playlists with emotional labels, such as "Happy Beats" or "Sad Piano", etc.. However, Spotify does not label their music based on emotion outright, and instead classifies music by a large variety of parameters (see \hyperref[Methods]{Methods}). 
 
 CONCLUSION
 
-\section[sec:sig_stat]{Significance Statement}
+\section[Significance Statement]{Significance Statement}
 
 Music is cool facial recognition is dope something about fronto-temporal dementia
 
-\section[sec:methods]{Methods}
-\label{sec:methods}
+\section[Methods]{Methods}
+\label{Methods}
 
 This project is running on a Python backend with a Node.js environment communicating to a React application to output the music to a browser. The general overview of the project is outlined in Figure 1 (INSERT FLOWCHART). 
 
@@ -228,24 +230,24 @@ Parsed emotions are also passed to a third worker, which communicates with Spoti
 
 After initialization, the worker loads the parameters for the recommendation request for each emotion. Every ten seconds, the worker queries Spotify for a list of recommendations given a random number of user top sonsg, artists, and genres as seeds, as well as the parameters given by the current emotion. The worker then plays a randomly chosen song from the returned list of suggestions, starting between one-sixth and one-third of the way through the song.\footnote{I chose these values because they are close to the start of the song but are past any lead-ins or introns, which might not accurately represent the emotion codified by the song.} 
 
-The tunable parameters that I chose for each emotion for the \href{https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recommendationsrecommendation}{recommendations query} from Spotify are as follows. Each parameter has a maximum, minimum, and target value (e.g. \texttt{min\char`_acousticness}, \texttt{max\char`_danceability}, \texttt{target\char`_valence} ): \texttt{acousticness, danceability, energy, instrumentalness, liveness, loudness, popularity, speechiness, tempo}, and \texttt{valence}. See the \hyperref[subsec:params]{supplemental material} for the tuned parameters for each emotion.
+The tunable parameters that I chose for each emotion for the \href{https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recommendationsrecommendation}{recommendations query} from Spotify are as follows. Each parameter has a maximum, minimum, and target value (e.g. \texttt{min\char`_acousticness}, \texttt{max\char`_danceability}, \texttt{target\char`_valence} ): \texttt{acousticness, danceability, energy, instrumentalness, liveness, loudness, popularity, speechiness, tempo}, and \texttt{valence}. See the \hyperref[Code Parameters]{supplemental material} for the tuned parameters for each emotion.
 
 Concurrently, a Node.js process supporting a React application is running to display the \href{https://developer.spotify.com/documentation/web-playback-sdk/}{Spotify Web Playback SDK} in a browser. The backend once again authorizes the user, and the browser functions as a device for Spotify playback, which is used as the default playback destination for the Spotify worker. 
 
-\section[sec:code_availability]{Code Availability}
+\section[Code Availability]{Code Availability}
 
 The code is available on \href{https://github.com/as4mo3/face-the-music/}{Github} under the GNU General Public License, version 3. 
 
-\section[sec:observations]{Observations}
-\label{observations}
+\section[Observations]{Observations}
+\label{Observations}
 
 hehe look at all those \sout{monkeys} people controlling this with their face hehe
 
-\section[sec:discussion]{Discussion}
-\label{discussion}
+\section[Discussion]{Discussion}
+\label{Discussion}
 
-\section[sec:conclusion]{Conclusion}
-\label{conclusion}
+\section[Conclusion]{Conclusion}
+\label{Conclusion}
 
 % \section{References}
 
@@ -261,12 +263,14 @@ hehe look at all those \sout{monkeys} people controlling this with their face he
 \nocite{*} % include entire bibliography, including things that aren't cited
 \printbibliography
 
+\pagebreak
 
-\section[sec:supp_mat]{Supplemental Material}
-\label{sec:supp_mat}
 
-\subsection[subsec:params]{Tuned Parameters}
-\label{subsec:params}
+\section[Supplemental Material]{Supplemental Material}
+\label{Supplemental Material}
+
+\subsection[Code Parameters]{Tuned Parameters}
+\label{Code Parameters}
 
 \begin{lstlisting}[language=Python]
 

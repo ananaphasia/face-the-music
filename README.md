@@ -14,7 +14,8 @@ Current facial recognition technology has progressed to the point that it can be
 
 ## Upcoming Plans
   - [x] Build working local prototype in Python
-  - [ ] Make portable -- port to browser?
+  - [x] Play music in browser
+  - [ ] Refactor code to actually communicated between itself
     - [ ] Learn React
   - [ ] Make portable to Raspberry PIs
   - [ ] Set up in MADD Center

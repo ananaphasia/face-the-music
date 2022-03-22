@@ -19,12 +19,244 @@
 
 \refsection{0}
   \datalist[entry]{cms/global//global/global}
-    \entry{hawking1988}{book}{}
+    \entry{clynes1983}{book}{}
       \name{author}{2}{}{%
-        {{hash=96ad97effcf8ad2784969f06c6ead9e5}{%
-           family={Justin},
+        {{hash=9f51cfcb873ab5c9c33eeef298e3da37}{%
+           family={Clynes},
+           familyi={C\bibinitperiod},
+           given={Manfred},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a43abecf0e55557926d602798a21fe45}{%
+           family={Nettheim},
+           familyi={N\bibinitperiod},
+           given={Nigel},
+           giveni={N\bibinitperiod}}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=9f51cfcb873ab5c9c33eeef298e3da37}{%
+           family={Clynes},
+           familyi={C\bibinitperiod},
+           given={Manfred},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {New South Wales State Conservatorium of Music}%
+      }
+      \strng{namehash}{b07b8a76c4d95603c6e8a0f94abb97b0}
+      \strng{fullhash}{b07b8a76c4d95603c6e8a0f94abb97b0}
+      \strng{bibnamehash}{b07b8a76c4d95603c6e8a0f94abb97b0}
+      \strng{authorbibnamehash}{b07b8a76c4d95603c6e8a0f94abb97b0}
+      \strng{authornamehash}{b07b8a76c4d95603c6e8a0f94abb97b0}
+      \strng{authorfullhash}{b07b8a76c4d95603c6e8a0f94abb97b0}
+      \strng{editorbibnamehash}{9f51cfcb873ab5c9c33eeef298e3da37}
+      \strng{editornamehash}{9f51cfcb873ab5c9c33eeef298e3da37}
+      \strng{editorfullhash}{9f51cfcb873ab5c9c33eeef298e3da37}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Emotions can be communicated through physical expression, such as a change in finger pressure over time. These can then be converted to essentic forms with recognizeable emotional characteristics. Essentic forms (i.e., musical pieces with specific dynamic expressive communications) can then be created and synthesized by computers.}
+      \field{chapter}{IV: The Living Quality of Music: Neurobiologic Patterns of Communicating Feeling}
+      \field{subtitle}{The Neuropsychology of Music}
+      \field{title}{Music, Mind, and Brain}
+      \field{year}{1983}
+      \true{nocite}
+    \endentry
+    \entry{cohen2001}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c9eaa2115c6d46cad8cb0a99eab37217}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Annabelle\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
            familyi={J\bibinitperiod},
-           given={Patrick\bibnamedelima N.},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=a7330e11a112a85d068cf188f91d06f2}{%
+           family={Sloboda},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{c9eaa2115c6d46cad8cb0a99eab37217}
+      \strng{fullhash}{c9eaa2115c6d46cad8cb0a99eab37217}
+      \strng{bibnamehash}{c9eaa2115c6d46cad8cb0a99eab37217}
+      \strng{authorbibnamehash}{c9eaa2115c6d46cad8cb0a99eab37217}
+      \strng{authornamehash}{c9eaa2115c6d46cad8cb0a99eab37217}
+      \strng{authorfullhash}{c9eaa2115c6d46cad8cb0a99eab37217}
+      \strng{editorbibnamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editornamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editorfullhash}{77003c2bfef5462bf5dcb810fa424e48}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Music adds to the diegetic functions of the film while being non-diegetic itself. Music, among other things, induces the mood of the scene in film. Emotions of characters can be communicated through the musical scores. Music also controls emotional responses, "directs attention to an object and ascribes its meaning to that object", and commands interest. Music represents emotion in the abstract, while the screen represents the object of emotional direction.}
+      \field{chapter}{11: Music as a Source of Emotion in Film}
+      \field{subtitle}{Theory and Research}
+      \field{title}{Music and Emotion}
+      \field{year}{2001}
+      \true{nocite}
+    \endentry
+    \entry{gabrielsson2001}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9d132e600175bec75fd8fc35016bec3c}{%
+           family={Gabrielsson},
+           familyi={G\bibinitperiod},
+           given={Alf},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=a7330e11a112a85d068cf188f91d06f2}{%
+           family={Sloboda},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{9d132e600175bec75fd8fc35016bec3c}
+      \strng{fullhash}{9d132e600175bec75fd8fc35016bec3c}
+      \strng{bibnamehash}{9d132e600175bec75fd8fc35016bec3c}
+      \strng{authorbibnamehash}{9d132e600175bec75fd8fc35016bec3c}
+      \strng{authornamehash}{9d132e600175bec75fd8fc35016bec3c}
+      \strng{authorfullhash}{9d132e600175bec75fd8fc35016bec3c}
+      \strng{editorbibnamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editornamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editorfullhash}{77003c2bfef5462bf5dcb810fa424e48}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Lists reports of intense, positive, negative, and mixed reactions to music. Reactions are all mostly for basic emotions, with some complex emotions. It is difficult to distinguish between emotions expressed in and aroused by music.}
+      \field{chapter}{19: Emotions in Strong Experiences with Music}
+      \field{subtitle}{Theory and Research}
+      \field{title}{Music and Emotion}
+      \field{year}{2001}
+      \true{nocite}
+    \endentry
+    \entry{harrer1977}{book}{}
+      \name{author}{2}{}{%
+        {{hash=6dda08cd8349404d5f3687927fe66336}{%
+           family={Harrer},
+           familyi={H\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ee6e4366d64f169382f66f0decfc90ac}{%
+           family={Harrer},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=50b0908d9e2c5a4df4460f48c110d3dc}{%
+           family={Critchley},
+           familyi={C\bibinitperiod},
+           given={MacDonald},
+           giveni={M\bibinitperiod}}}%
+        {{hash=541b89a671f7d6d6bc8bc1af7817b7d5}{%
+           family={Henson},
+           familyi={H\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {William Heinemann Medical Books Limited}%
+      }
+      \strng{namehash}{0b8840dbc3826a97ec60c7989ab22397}
+      \strng{fullhash}{0b8840dbc3826a97ec60c7989ab22397}
+      \strng{bibnamehash}{0b8840dbc3826a97ec60c7989ab22397}
+      \strng{authorbibnamehash}{0b8840dbc3826a97ec60c7989ab22397}
+      \strng{authornamehash}{0b8840dbc3826a97ec60c7989ab22397}
+      \strng{authorfullhash}{0b8840dbc3826a97ec60c7989ab22397}
+      \strng{editorbibnamehash}{4ec90421debf0d363fc5d60ede91f505}
+      \strng{editornamehash}{4ec90421debf0d363fc5d60ede91f505}
+      \strng{editorfullhash}{4ec90421debf0d363fc5d60ede91f505}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Emotional reactions to music depend on the attitude of the listener towards the music, their current mood, etc.. Different music can produce cardiovascular or motor responses. Responses greater in performers than in listeners. Pulse can synchronize to the beat of the music (or some subbeat). Muscular movement can be recorded throughout a musical piece (EMG). Low dosages of tranquilizers suppress muscle movements during musical listening, but not emotional experiences. Large doses suppress both.}
+      \field{chapter}{12: Music, Emotion and Autonomic Function}
+      \field{subtitle}{Studies in the Neurology of Music}
+      \field{title}{Music and the Brain}
+      \field{year}{1977}
+      \true{nocite}
+    \endentry
+    \entry{henson1977}{book}{}
+      \name{author}{1}{}{%
+        {{hash=541b89a671f7d6d6bc8bc1af7817b7d5}{%
+           family={Henson},
+           familyi={H\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=50b0908d9e2c5a4df4460f48c110d3dc}{%
+           family={Critchley},
+           familyi={C\bibinitperiod},
+           given={MacDonald},
+           giveni={M\bibinitperiod}}}%
+        {{hash=541b89a671f7d6d6bc8bc1af7817b7d5}{%
+           family={Henson},
+           familyi={H\bibinitperiod},
+           given={R.\bibnamedelimi A.},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {William Heinemann Medical Books Limited}%
+      }
+      \strng{namehash}{541b89a671f7d6d6bc8bc1af7817b7d5}
+      \strng{fullhash}{541b89a671f7d6d6bc8bc1af7817b7d5}
+      \strng{bibnamehash}{541b89a671f7d6d6bc8bc1af7817b7d5}
+      \strng{authorbibnamehash}{541b89a671f7d6d6bc8bc1af7817b7d5}
+      \strng{authornamehash}{541b89a671f7d6d6bc8bc1af7817b7d5}
+      \strng{authorfullhash}{541b89a671f7d6d6bc8bc1af7817b7d5}
+      \strng{editorbibnamehash}{4ec90421debf0d363fc5d60ede91f505}
+      \strng{editornamehash}{4ec90421debf0d363fc5d60ede91f505}
+      \strng{editorfullhash}{4ec90421debf0d363fc5d60ede91f505}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Music is a language that communicates musical ideas well and succinctly, which speech is unable to. Music cannot be described in words. There may sometimes be "meanings beyond musical ideas", but that is up to the listener to decide. Some of these ideas evoke emotions: "...music is then the image of these emotions...".}
+      \field{chapter}{14: The Language of Music}
+      \field{subtitle}{Studies in the Neurology of Music}
+      \field{title}{Music and the Brain}
+      \field{year}{1977}
+      \true{nocite}
+    \endentry
+    \entry{huron2011}{book}{}
+      \name{author}{2}{}{%
+        {{hash=322a7461ef0a1de376e227a3d8afe98e}{%
+           family={Huron},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9923314cb2f6f63f3b8604240e00a01e}{%
+           family={Margulis},
+           familyi={M\bibinitperiod},
+           given={Elizabeth\bibnamedelima Hellmuth},
+           giveni={E\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=b6fcaa5a8a280f33e15f70880eeedc79}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrk\bibnamedelima N.},
            giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
         {{hash=5295bf9e9036af311da830f982953cf3}{%
            family={Sloboda},
@@ -32,25 +264,494 @@
            given={John\bibnamedelima A.},
            giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
       }
-      \list{location}{1}{%
-        {London}%
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{1f7aab7020d8abf6bbe26f4d892a6e85}
+      \strng{fullhash}{1f7aab7020d8abf6bbe26f4d892a6e85}
+      \strng{bibnamehash}{1f7aab7020d8abf6bbe26f4d892a6e85}
+      \strng{authorbibnamehash}{1f7aab7020d8abf6bbe26f4d892a6e85}
+      \strng{authornamehash}{1f7aab7020d8abf6bbe26f4d892a6e85}
+      \strng{authorfullhash}{1f7aab7020d8abf6bbe26f4d892a6e85}
+      \strng{editorbibnamehash}{fb1b5baa58af1573f916b494a6350ebd}
+      \strng{editornamehash}{fb1b5baa58af1573f916b494a6350ebd}
+      \strng{editorfullhash}{fb1b5baa58af1573f916b494a6350ebd}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Music is often sought out to change one's mood, second only to a conversation with a close friend. Prediction events in music elicit dopaminergic reward responses similarly to any other expected event. Musical frisson is elicited through mechanisms similar to fear.}
+      \field{chapter}{21: Musical Expectancy and Thrills}
+      \field{subtitle}{Theory, Research, Applications}
+      \field{title}{Handbook of Msuic and Emotion}
+      \field{year}{2011}
+      \true{nocite}
+    \endentry
+    \entry{juslin2001}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=a7330e11a112a85d068cf188f91d06f2}{%
+           family={Sloboda},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Oxford University Press}%
       }
-      \strng{namehash}{2b862f2d7bf7a7d3cf6debb600147464}
-      \strng{fullhash}{2b862f2d7bf7a7d3cf6debb600147464}
-      \strng{bibnamehash}{2b862f2d7bf7a7d3cf6debb600147464}
-      \strng{authorbibnamehash}{2b862f2d7bf7a7d3cf6debb600147464}
-      \strng{authornamehash}{2b862f2d7bf7a7d3cf6debb600147464}
-      \strng{authorfullhash}{2b862f2d7bf7a7d3cf6debb600147464}
+      \strng{namehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{fullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{bibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{editorbibnamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editornamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editorfullhash}{77003c2bfef5462bf5dcb810fa424e48}
+      \field{extraname}{1}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{annotation}{Testing testing 123}
-      \field{title}{Handbook of music and emotion: theory, research, applications}
-      \field{year}{2010}
+      \field{annotation}{Performers can communicate emotions to listeners with high accuracy through cues. Complex emotions are a combination of basic emotions, which can vary in time and depend on note ordering. Timing patterns alone communicate some emotions, but less effective than tempo or dynamics. Emotions are communicated in music similar to using prosodic cues in the voice. Muic might stimulate emotions through an "emotional contagion" or through violation of musical expectations.}
+      \field{chapter}{14: Communicating Emotion in Music Performance: A Review and Theoretical Framework}
+      \field{subtitle}{Theory and Research}
+      \field{title}{Music and Emotion}
+      \field{year}{2001}
+      \true{nocite}
+    \endentry
+    \entry{15juslin2019}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{fullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{bibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \field{extraname}{2}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extratitle}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{This book is the easiest to read so far. Music arousing emotions can be measured through the following mechanisms: self-reporting, psychophysiological measurements, specific patterns of neural activation (most likely a network of the amygdala, hippocampus, para-hippocampus, temporal poles, and maybe the pre-genual cingulate cortex), or action tendencies.}
+      \field{chapter}{15: Does Music Arouse Emotions? How Do We Know?}
+      \field{subtitle}{Unlocking the secrets of musical affect}
+      \field{title}{Musical Emotions Explained}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{16juslin2019}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{fullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{bibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \field{extraname}{3}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extratitle}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Music is incredibly prevalent but doesn't always elicit emotions. Music usually arouses positive emotions: joy, interest, contentment, and love; but may also elicit complex emotions. Mixed emotional responses can also occur to music. Music doesn't induce unique emotions. Interestingly, music can also arouse emotions at the individual but also interpersonal and intergroup levels.}
+      \field{chapter}{16: The Prevalence of Emotional Reactions}
+      \field{subtitle}{Unlocking the secrets of musical affect}
+      \field{title}{Musical Emotions Explained}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{17juslin2019}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{fullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{bibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \field{extraname}{4}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extratitle}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Music is, indeed, a stimulus which then, through a complex mechanism, arouses emotions, just as any other stimulus. Emotions can be triggered by a "musical event," containing music, listener, and context. Mechanisms for emotion effectations are the BRECVEMA model: Brainstem reflex, Rhythmic entrainment, Evaluative conditioning, Contagion, Visual imagery, Episodic memory, Musical expectancy, and Aesthetic judgement. Could also be cognitive goal appraisal. He goes deeper in depth in each of these in the subsequent chapters.}
+      \field{chapter}{17: How Does Music Arouse Emotions?}
+      \field{subtitle}{Unlocking the secrets of musical affect}
+      \field{title}{Musical Emotions Explained}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{25juslin2019}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{fullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{bibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \field{extraname}{5}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extratitle}{4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{He has a table of each of the BRECVEMA aspects with, among other things, induced affect, induction speed, degree of volitional influence, availability to consciousness, and dependendence on musical structure. B: arousal, surprise; R: arousal increase/decrease; E: basic emotions; C: basic emotions; V: all possible emotions; E: all possible emotions (esp nostalgia and longing); M: anticipation, anxiety, surprise, releif, tension. All are medium dependent on musical structure except E, E (low) and M (high). Musical emotions involve A1, cingulate, PFC, PAG, emotional processing. Real-world musical events often multiply mediated, not just one-to-one emotion:music. BRECVEMA response framework explains individual differences between listeners, and also explains no response (if no relevant information present). Personal musical induction mechanisms still influenced by context. Musical emotion evocation is moderately universal across cultures: low-level mechanisms conserved, responses not.}
+      \field{chapter}{25: Predictions, Implications, Complications}
+      \field{subtitle}{Unlocking the secrets of musical affect}
+      \field{title}{Musical Emotions Explained}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{29juslin2019}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{fullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{bibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \field{extraname}{6}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extratitle}{5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{This chapter and this part all deal with the Aesthetic judgement part of the BRECVEMA model. To be aesthetically valuable, music should be heard as expressive. Not all good music is beautiful but all good music is expressive. Novel music is interesting. People prefer music that arouses emotions, but emotional arousal does not require aesthetic judgements. Preferences for specific styles can either help or hinder appreciation of the music at hand.}
+      \field{chapter}{29: Aesthetic Criteria: Meet the Usual Suspects}
+      \field{subtitle}{Unlocking the secrets of musical affect}
+      \field{title}{Musical Emotions Explained}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{30juslin2019}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{fullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{bibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \field{extraname}{7}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extratitle}{6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Music judged as aesthetically pleasing, greater than some aesthetic threshold, induces positive emotions, while displeasing emotions induce negative emotions. Not all art strives to evoke positive emotions.}
+      \field{chapter}{30: A Novel Approach Towards Aesthetic Judgement}
+      \field{subtitle}{Unlocking the secrets of musical affect}
+      \field{title}{Musical Emotions Explained}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{32juslin2019}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{fullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{bibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \field{extraname}{8}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extratitle}{7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Music can effect pleasurable sad (or otherwise negative) emotions. Listeners can prepare to feel the strongest emotions from a certain musical listening.}
+      \field{chapter}{32: The Last Chorus: Putting It All Together}
+      \field{subtitle}{Unlocking the secrets of musical affect}
+      \field{title}{Musical Emotions Explained}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{sloboda2001}{book}{}
+      \name{author}{2}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=a7330e11a112a85d068cf188f91d06f2}{%
+           family={Sloboda},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=a7330e11a112a85d068cf188f91d06f2}{%
+           family={Sloboda},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{fullhash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{bibnamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{authorbibnamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{authornamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{authorfullhash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editorbibnamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editornamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editorfullhash}{77003c2bfef5462bf5dcb810fa424e48}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Emotions are hard to define, but can be measured using self-reporting, expressive behaviors, or physiological measures. Emotions are eliciting through proximally eliciting stimuli in an unconscious manner. Sources of emotions in music can be either intrinsic to the music or extrinsic, with complex interactions.}
+      \field{chapter}{4: Psychological Perspective on Music and Emotion}
+      \field{subtitle}{Theory and Research}
+      \field{title}{Music and Emotion}
+      \field{year}{2001}
+      \true{nocite}
+    \endentry
+    \entry{scherer2001}{book}{}
+      \name{author}{2}{}{%
+        {{hash=d58a2db7c63b1b03e551e000c83c2a30}{%
+           family={Scherer},
+           familyi={S\bibinitperiod},
+           given={Klaus\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=12a95859e2f467041c4c729d4c5f0675}{%
+           family={Zentner},
+           familyi={Z\bibinitperiod},
+           given={Marcel\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=a7330e11a112a85d068cf188f91d06f2}{%
+           family={Sloboda},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{8e3227a7312c013bb880d789afcb9f8d}
+      \strng{fullhash}{8e3227a7312c013bb880d789afcb9f8d}
+      \strng{bibnamehash}{8e3227a7312c013bb880d789afcb9f8d}
+      \strng{authorbibnamehash}{8e3227a7312c013bb880d789afcb9f8d}
+      \strng{authornamehash}{8e3227a7312c013bb880d789afcb9f8d}
+      \strng{authorfullhash}{8e3227a7312c013bb880d789afcb9f8d}
+      \strng{editorbibnamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editornamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editorfullhash}{77003c2bfef5462bf5dcb810fa424e48}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Music can evoke emotions through: A. Central route production: 1. appraisal theory, which evaluates the con/de-structiveness of a musical stimulus and its compatibility with internal and external standards; 2. by bringing up memories with an emotional valence; or 3. empathetic responses to the performers. B. Peripheral route production: 1. proprioceptive feedback; or 2. by facilitating pre-existing emotions.}
+      \field{chapter}{16: Emotional Effects of Music: Production Rules}
+      \field{subtitle}{Theory and Research}
+      \field{title}{Music and Emotion}
+      \field{year}{2001}
+      \true{nocite}
+    \endentry
+    \entry{schubert2001}{book}{}
+      \name{author}{1}{}{%
+        {{hash=000bfda67abd6a4af074472ec7b74447}{%
+           family={Schubert},
+           familyi={S\bibinitperiod},
+           given={Emery},
+           giveni={E\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=a7330e11a112a85d068cf188f91d06f2}{%
+           family={Sloboda},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{000bfda67abd6a4af074472ec7b74447}
+      \strng{fullhash}{000bfda67abd6a4af074472ec7b74447}
+      \strng{bibnamehash}{000bfda67abd6a4af074472ec7b74447}
+      \strng{authorbibnamehash}{000bfda67abd6a4af074472ec7b74447}
+      \strng{authornamehash}{000bfda67abd6a4af074472ec7b74447}
+      \strng{authorfullhash}{000bfda67abd6a4af074472ec7b74447}
+      \strng{editorbibnamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editornamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editorfullhash}{77003c2bfef5462bf5dcb810fa424e48}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Emotions can only be induced over time.}
+      \field{chapter}{17: Continuous Measurement of Self-Report Emotional Response to Music}
+      \field{subtitle}{Theory and Research}
+      \field{title}{Music and Emotion}
+      \field{year}{2001}
+      \true{nocite}
+    \endentry
+    \entry{oneill2001}{book}{}
+      \name{author}{2}{}{%
+        {{hash=5295bf9e9036af311da830f982953cf3}{%
+           family={Sloboda},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=22bdbab580676a35e81a0dc85bbb3be6}{%
+           family={O'Neill},
+           familyi={O\bibinitperiod},
+           given={Susan\bibnamedelima A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=a7330e11a112a85d068cf188f91d06f2}{%
+           family={Sloboda},
+           familyi={S\bibinitperiod},
+           given={John\bibnamedelima N.},
+           giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{5f6c02bc26c6c44f8c04a6a82a8369ed}
+      \strng{fullhash}{5f6c02bc26c6c44f8c04a6a82a8369ed}
+      \strng{bibnamehash}{5f6c02bc26c6c44f8c04a6a82a8369ed}
+      \strng{authorbibnamehash}{5f6c02bc26c6c44f8c04a6a82a8369ed}
+      \strng{authornamehash}{5f6c02bc26c6c44f8c04a6a82a8369ed}
+      \strng{authorfullhash}{5f6c02bc26c6c44f8c04a6a82a8369ed}
+      \strng{editorbibnamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editornamehash}{77003c2bfef5462bf5dcb810fa424e48}
+      \strng{editorfullhash}{77003c2bfef5462bf5dcb810fa424e48}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Music is ubiquitous and intrinsically socially and culturally linked, which people often forget. People listen to music to fill functional niches, and can influence mood. People like music moe when they can control it (i.e., in private spaces, or busking). Music is directly tied to personality and identity, and can be used daily as self-therapy.}
+      \field{chapter}{18: Emotions in Everyday Listening to Music}
+      \field{subtitle}{Theory and Research}
+      \field{title}{Music and Emotion}
+      \field{year}{2001}
+      \true{nocite}
+    \endentry
+    \entry{stravinsky1936}{book}{}
+      \name{author}{1}{}{%
+        {{hash=96fe96bacb55c5e3d1c1fae92fbeb615}{%
+           family={Stravinsky},
+           familyi={S\bibinitperiod},
+           given={Igor},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Simon {and} Schuster}%
+      }
+      \strng{namehash}{96fe96bacb55c5e3d1c1fae92fbeb615}
+      \strng{fullhash}{96fe96bacb55c5e3d1c1fae92fbeb615}
+      \strng{bibnamehash}{96fe96bacb55c5e3d1c1fae92fbeb615}
+      \strng{authorbibnamehash}{96fe96bacb55c5e3d1c1fae92fbeb615}
+      \strng{authornamehash}{96fe96bacb55c5e3d1c1fae92fbeb615}
+      \strng{authorfullhash}{96fe96bacb55c5e3d1c1fae92fbeb615}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Quote: "Most people like music because it gives them certain emotions, such as joy, grief, sadness, an image of nature, a subject for daydreams, or -- still better -- oblivion from "everyday life." They want a drug -- "dope." It matters little whether this way of thinking of music is expressed directly or is wrapped up in a veil of artificial circumlocutions. Music would not be worth much if it were reduced to such an end. When people have learned to love music for itself, when they listen with other ears, their enjoyment will be of a far higher and more potent order, and they will be able to judge it on a higher plane and realize its intrinsic value."}
+      \field{title}{An Autobiography}
+      \field{year}{1936}
       \true{nocite}
     \endentry
     \entry{sundberg1983}{book}{}
@@ -84,9 +785,10 @@
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{annotation}{Emotions passed from the voice. Vocal emotions irrespective of culture and language of origin.}
+      \field{annotation}{Sundberg discusses vocally generated emotions, focusing on phonation frequencies. He also discusses singing with an emotional expression, with the following observed criteria, increasing: 1. Tempo: sorrow, neutral, joy, anger, fear. 2: Pauses between syllables: neutral, joy, anger, sorrow, fear. 3: Voice amplitude: fear, neutral, sorrow, joy, fear. 4: Tone onsets/offsets: anger/fear, joy, neutral, sorrow. Joy requires more than just signal characteristics (eg pitch, loudness, outset, etc.).}
       \field{chapter}{VII: Speech, Song, and Emotions}
-      \field{title}{Music, Mind, and Brain: The Neuropsychology of Music}
+      \field{subtitle}{The Neuropsychology of Music}
+      \field{title}{Music, Mind, and Brain}
       \field{year}{1983}
       \true{nocite}
     \endentry
