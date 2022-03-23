@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber writeup"] 1647991759 "writeup.bcf" "writeup.bbl" "writeup" 1647992112
-  "ref.bib" 1647990018 15315 ccfbd001a8b6a6fc6f0d7c16397bf6e8 ""
-  "writeup.bcf" 1647992112 157321 c7e7eb935c93d7cbe6f0faaefc5c714a "pdflatex"
+["biber writeup"] 1648006266 "writeup.bcf" "writeup.bbl" "writeup" 1648006287
+  "ref.bib" 1648005699 15824 91e43be4a84d4e04c7ce407b56115324 ""
+  "writeup.bcf" 1648006286 186420 60966d22314848dd10a461946324b467 "pdflatex"
   (generated)
   "writeup.bbl"
   "writeup.blg"
-["pdflatex"] 1647992104 "c:/Users/Antony/Documents/uChicago/Winter 2022/Music Thesis/writeup/writeup.tex" "writeup.pdf" "writeup" 1647992112
-  "c:/Users/Antony/Documents/uChicago/Winter 2022/Music Thesis/writeup/writeup.tex" 1647992102 18406 09fffc83da72257c66dd507b54328f6f ""
+["pdflatex"] 1648006280 "c:/Users/Antony/Documents/uChicago/Winter 2022/Music Thesis/writeup/writeup.tex" "writeup.pdf" "writeup" 1648006287
+  "c:/Users/Antony/Documents/uChicago/Winter 2022/Music Thesis/writeup/writeup.tex" 1648006256 21339 4459e3cb5a8d5b939d6001e2825f6a68 ""
   "c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1646689302 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1646690268 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1646689837 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -86,8 +86,9 @@
   "c:/texlive/2021/texmf-dist/tex/latex/base/omscmr.fd" 1646690920 2469 ed49302eacbaebdd899d39dedcd25393 ""
   "c:/texlive/2021/texmf-dist/tex/latex/base/size10.clo" 1646690921 8448 96f18c76bf608a36ee6fbf021ac1dd32 ""
   "c:/texlive/2021/texmf-dist/tex/latex/biblatex-chicago/biblatex-chicago.sty" 1646688904 10619 97d15fc75cf384547b54e66d1852146e ""
-  "c:/texlive/2021/texmf-dist/tex/latex/biblatex-chicago/chicago-notes.bbx" 1646688904 152070 044853518fa25645bd12735fc1916f72 ""
-  "c:/texlive/2021/texmf-dist/tex/latex/biblatex-chicago/chicago-notes.cbx" 1646688904 323986 3c0ae4aaa401053ef33477145dc285c7 ""
+  "c:/texlive/2021/texmf-dist/tex/latex/biblatex-chicago/chicago-authordate.bbx" 1646688904 163412 72bb3f7821f276e075adea50b782d873 ""
+  "c:/texlive/2021/texmf-dist/tex/latex/biblatex-chicago/chicago-authordate.cbx" 1646688904 11014 c0a0e4192a52c5545ccdad46263737bb ""
+  "c:/texlive/2021/texmf-dist/tex/latex/biblatex-chicago/chicago-dates-common.cbx" 1646688904 135021 162a730a51ea161af0c30ac489ae5cbf ""
   "c:/texlive/2021/texmf-dist/tex/latex/biblatex-chicago/cms-american.lbx" 1646688904 47272 87badd26207bdf3b1b390fdd65fe40e7 ""
   "c:/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.cfg" 1646688877 69 249fa6df04d948e51b6d5c67bea30c42 ""
   "c:/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.def" 1646688877 92433 79544388cb6fa8a24563a36f105a23c0 ""
@@ -144,11 +145,11 @@
   "c:/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1646694332 1540265 aa265309efd10c82689d42b91e3812ad ""
   "c:/texlive/2021/texmf.cnf" 1646694085 713 e69b156964470283e0530f5060668171 ""
   "img//UChicago_College_Horizontal_Color_RGB.png" 1647536505 73975 00046c0e889f4c8800ddc49d69928474 ""
-  "writeup.aux" 1647992112 4116 d5b55eadd70251ea8bfecdf2191fd261 "pdflatex"
-  "writeup.bbl" 1647991768 41187 8dd9088446f71b69898693efb1f6d725 "biber writeup"
-  "writeup.out" 1647992112 1117 ecc6d8c348e927fd5647db16cb94c48b "pdflatex"
-  "writeup.run.xml" 1647992112 2367 82f94187dd009d3ced835a4026a48e36 "pdflatex"
-  "writeup.tex" 1647992102 18406 09fffc83da72257c66dd507b54328f6f ""
+  "writeup.aux" 1648006286 5053 1d86bbcc30349e9d1f6b90880c294271 "pdflatex"
+  "writeup.bbl" 1648006273 45117 7db06b93e23fe86495de2cc9c5e74ea6 "biber writeup"
+  "writeup.out" 1648006286 1117 ecc6d8c348e927fd5647db16cb94c48b "pdflatex"
+  "writeup.run.xml" 1648006286 2421 7f87bcd247075fb848f2b15cbea6e647 "pdflatex"
+  "writeup.tex" 1648006256 21339 4459e3cb5a8d5b939d6001e2825f6a68 ""
   (generated)
   "writeup.aux"
   "writeup.bcf"

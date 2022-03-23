@@ -40,7 +40,7 @@
 % terseinits=true,
 % uniquename=false
 % ]{biblatex}
-\usepackage[notes,backend=biber,isbn=false,annotation]{biblatex-chicago}
+\usepackage[authordate,backend=biber,isbn=false,annotation]{biblatex-chicago}
 \addbibresource{ref.bib}
 \DeclareNameAlias{sortname}{family-given}
 \renewcommand*{\revsdnamepunct}{}
@@ -190,26 +190,36 @@
 
 \section{Abstract}
 
-Since time immemorial, music has both elicited and strengthened emotions. 
+Since time immemorial, music has both elicited and strengthened emotions. Normally, music elicits emotions, from the performer in the listener. However, little has been done going the other direction: Emotions do not usually create music. Emotions are often used during the composition and creation of music, but that is still through and intermediate: the composer. In this project, I wanted to go the other way: What would happen if the emotions of the listener affected the music?
 
-Current facial recognition technology has progressed to the point that it can be done in nearly real-time. In this project, I use the Python library \href{https://pypi.org/project/deepface/}{DeepFace} to read peoples' emotions in real-time, and then the Spotify \href{https://developer.spotify.com/documentation/web-api/reference/}{Web API} and \href{https://developer.spotify.com/documentation/web-playback-sdk/reference/}{Web Playback SDK} to play music related to those emotions.
+To that end, I use facial recognition technology to read a user's emotions, as current facial recognition technology has progressed to the point that it can be done in nearly real-time. In this project, I use the Python library \href{https://pypi.org/project/deepface/}{DeepFace} to read peoples' emotions in real-time, and then the Spotify \href{https://developer.spotify.com/documentation/web-api/reference/}{Web API} and \href{https://developer.spotify.com/documentation/web-playback-sdk/reference/}{Web Playback SDK} to play music related to those emotions. I set up this project on a Raspberry Pi, continually running a Python script that reads data from the camera and then pulls data from Spotify. 
 
-I set up this project on a Raspberry Pi, continually running a Python script that reads data from the camera and then pulls data from Spotify. I then set up the Raspberry Pi in the Media Arts, Data, and Design (MADD) Center at the University of Chicago. 
+I then set up the Raspberry Pi in the Media Arts, Data, and Design (MADD) Center at the University of Chicago. 
 
 
 \section{Background}
 
-Music and emotions have been indelibly linked throughout human history. From the first chants to pop songs, music has evoked emotions in its listeners since time immemorial. Here, I was interested in the other direction: what if we create music based on an emotion, instead of the other way around?
+From the first songs around a campfire, to soaring symphonies in concerthalls, to twenty-thousand strong rock band audiences, to sad songs after a breakup, music guides us, drives us, and affects who we are. It has always been part of the human experience, and music is often used to change or strengthen one's mood (\cite{huron2011}).
 
-To answer that question, then, I needed a way to read the emotions of users in near real-time, and then a way to either synthesize music of a certain emotion or pull from an already-existing database. I knew that facial recognition software could accomplish the first step, and so I chose to use a pre-trained model.
+Music is incredibly prevalent around us in the modern day, but it does not always elicit emotions (\cite{16juslin2019}). The emotions that it does elicit, however, are usually basic emotions, such as joy, love, happiness, fear, anger, sorrow, and neutral (\cite{sundberg1983}). The ways in which it does so is affected by affected the current internal state of the listener (\cite{harrer1977}). 
+
+Patrik N. Juslin has created a model for how music elicits emotions in an individual, known as the BRECVEMA model: Brainstem reflex, Rhythmic entrainment, Evaluative conditioning, Contagion, Visual imagery, Episodic memory, Musical expectancy, and Aesthetic judgement (\cite{17juslin2019}). Each of these mechanisms affects the effected emotion differently: for example, music that stimulates the brainstem (such as sudden loud sounds) is more likely to induce arousal or surprise, while music that triggers episodic memory can induce any possible emotion, but especially nostalgia and longing (\cite{25juslin2019}). Of course, there are also other mechanisms with which music can elicit emotions, such as cognitive goal appraisal. 
+
+In fact, music listeners report that experiencing negative emotions, such as sadness, anger, or fear, is often pleasurable (\cite{32juslin2019}). However, music can only induce emotions over time: one note, out of context, cannot create an emotional state all on its own (\cite{schubert2001}). Also, the emotions that music induces are affected by the society and culture of the listener, which people often forget. Music also induces stronger emotions when it can be controlled, such as in private spaces or through busking (\cite{oneill2001}). 
+
+I wanted to, instead, focus on the other direction: what if we create music based on an emotion, instead of the other way around?
+
+For that, I needed a way to read the emotions of users in near real-time, and then a way to either synthesize music of a certain emotion or pull from an already-existing database. I knew that facial recognition software could accomplish the first step, and so I chose to use a pre-trained model.
 
 Facial recognition software has been available for the past DECADE (citation), and its implementations in the modern day are not without controversy. However, much research has been done on facial recognition, and current implementations are incredibly lightweight, especially using pre-trained models. 
 
 Unfortunately, real-time music synthesis is not yet available. While artificial-intelligence based musical synthesis has already passed the Turing Test (citation), the models are not quite versatile enough yet to produce a continuous stream of music with changing input parameters (i.e., the emotion of the user). As such, I decided to use a corpus of music that is already labeled, which is found in many streaming services, such as \href{https://www.apple.com/apple-music/}{Apple Music} or \href{https://www.spotify.com/us/}{Spotify}.
 
+The art of providing recommendations from a previous song is a million-dollar problem in the music streaming industry: customer retention is, of course, paramount. As such, services such as Apple iTunes, Pandora, or Spotify, all have well-curated algorithms for their musical recommendations, which are especially fine-tuned for commercial music (\cite{drott2018}). 
+
 Spotify, the most-used music streaming service in the world (\href{https://www.midiaresearch.com/blog/music-subscriber-market-shares-q2-2021}{citation}), has many playlists with emotional labels, such as "Happy Beats" or "Sad Piano", etc.. However, Spotify does not label their music based on emotion outright, and instead classifies music by a large variety of parameters (see \hyperref[Methods]{Methods}). 
 
-CONCLUSION
+I tuned these parameters used in my queries by analyzing the output music from each range or combination of parameters. I personally tuned each parameter for each emotion until I was satisfied with the emotional valence of each recommended song.
 
 \section[Significance Statement]{Significance Statement}
 

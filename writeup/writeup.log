@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.7)  22 MAR 2022 18:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.7)  22 MAR 2022 22:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -379,7 +379,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2022/02/02 v3.17 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'chicago-notes.dbx' not found.
+Package biblatex Info: ... file 'chicago-authordate.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count337
@@ -487,35 +487,38 @@ File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip21
 \c@smartand=\count413
 )
-Package biblatex Info: Trying to load bibliography style 'chicago-notes'...
-Package biblatex Info: ... file 'chicago-notes.bbx' found.
- (c:/texlive/2021/texmf-dist/tex/latex/biblatex-chicago/chicago-notes.bbx
-File: chicago-notes.bbx 2021/06/30 v 3.16 biblatex bibliography style
+Package biblatex Info: Trying to load bibliography style 'chicago-authordate'...
+Package biblatex Info: ... file 'chicago-authordate.bbx' found.
+ (c:/texlive/2021/texmf-dist/tex/latex/biblatex-chicago/chicago-authordate.bbx
+File: chicago-authordate.bbx 2021/06/30 v 3.16 biblatex bibliography style
 \lositemsep=\skip84
 \cms@tempcnta=\count414
 \cms@tempcntb=\count415
 \c@bbx:relatedcount=\count416
 \c@bbx:relatedtotal=\count417
-\c@cms@reviewcount=\count418
-\c@cms@currentnote=\count419
 )
-Package biblatex Info: Trying to load citation style 'chicago-notes'...
-Package biblatex Info: ... file 'chicago-notes.cbx' found.
- (c:/texlive/2021/texmf-dist/tex/latex/biblatex-chicago/chicago-notes.cbx
-File: chicago-notes.cbx 2021/03/27 v 3.16 biblatex citation style
+Package biblatex Info: Trying to load citation style 'chicago-authordate'...
+Package biblatex Info: ... file 'chicago-authordate.cbx' found.
+ (c:/texlive/2021/texmf-dist/tex/latex/biblatex-chicago/chicago-authordate.cbx
+File: chicago-authordate.cbx 2021/03/27 v 3.16 biblatex citation style
+Package biblatex Info: Trying to load citation style 'chicago-dates-common'...
+Package biblatex Info: ... file 'chicago-dates-common.cbx' found.
+ (c:/texlive/2021/texmf-dist/tex/latex/biblatex-chicago/chicago-dates-common.cbx
+File: chicago-dates-common.cbx 2021/03/27 v 3.16 biblatex citation style
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
 Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\smartcites'.
+Package biblatex Info: Redefining '\footcitetext'.
 Package biblatex Info: Redefining '\footfullcite'.
 Package biblatex Info: Redefining '\fullcite'.
-Package biblatex Info: Redefining '\citeincitef'.
-Package biblatex Info: Redefining '\citeauthor'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetexts'.
 Package biblatex Info: Delimiter 'dateeradelim' in context '' already defined, overwriting.
-)
+))
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
  (c:/texlive/2021/texmf-dist/tex/latex/biblatex/biblatex.cfg
@@ -527,7 +530,7 @@ Package biblatex Info: Document encoding is UTF8 ....
 Package: expl3 2022-02-24 L3 programming layer (loader) 
  (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count420
+\l__color_backend_stack_int=\count418
 \l__pdf_internal_box=\box54
 ))
 Package biblatex Info: ... and expl3
@@ -539,22 +542,22 @@ Package: xparse 2022-01-12 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2022/02/02 v3.17 expl3 case changing code for biblatex
 ))) (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count421
+\lst@mode=\count419
 \lst@gtempboxa=\box55
 \lst@token=\toks34
-\lst@length=\count422
+\lst@length=\count420
 \lst@currlwidth=\dimen165
-\lst@column=\count423
-\lst@pos=\count424
+\lst@column=\count421
+\lst@pos=\count422
 \lst@lostspace=\dimen166
 \lst@width=\dimen167
-\lst@newlines=\count425
-\lst@lineno=\count426
+\lst@newlines=\count423
+\lst@lineno=\count424
 \lst@maxwidth=\dimen168
  (c:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count427
-\lst@skipnumbers=\count428
+\c@lstnumber=\count425
+\lst@skipnumbers=\count426
 \lst@framebox=\box56
 ) (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -566,16 +569,16 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 \UL@skip=\skip85
 \UL@hook=\toks35
 \UL@height=\dimen169
-\UL@pe=\count429
+\UL@pe=\count427
 \UL@pixel=\dimen170
 \ULC@box=\box59
 Package: ulem 2019/11/18
 \ULdepth=\dimen171
 )
-\c@theorem=\count430
-\c@axiom=\count431
-\@quotelevel=\count432
-\@quotereset=\count433
+\c@theorem=\count428
+\c@axiom=\count429
+\@quotelevel=\count430
+\@quotereset=\count431
  (./writeup.aux)
 \openout1 = `writeup.aux'.
 
@@ -614,16 +617,16 @@ LaTeX Info: Redefining \nameref on input line 158.
 
  (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count434
+\scratchcounter=\count432
 \scratchdimen=\dimen172
 \scratchbox=\box60
-\nofMPsegments=\count435
-\nofMParguments=\count436
+\nofMPsegments=\count433
+\nofMParguments=\count434
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count437
+\MPscratchCnt=\count435
 \MPscratchDim=\dimen173
-\MPnumerator=\count438
-\makeMPintoPDFobject=\count439
+\MPnumerator=\count436
+\makeMPintoPDFobject=\count437
 \everyMPtoPDFconversion=\toks37
 ) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -659,7 +662,7 @@ Package biblatex Info: ... file 'writeup.bbl' found.
  (./writeup.bbl)
 Package biblatex Info: Reference section=0 on input line 158.
 Package biblatex Info: Reference segment=0 on input line 158.
-\c@lstlisting=\count440
+\c@lstlisting=\count438
 <./img//UChicago_College_Horizontal_Color_RGB.png, id=44, 734.5041pt x 179.9523pt>
 File: ./img//UChicago_College_Horizontal_Color_RGB.png Graphic file (type png)
 <use ./img//UChicago_College_Horizontal_Color_RGB.png>
@@ -670,48 +673,53 @@ Package pdftex.def Info: ./img//UChicago_College_Horizontal_Color_RGB.png  used 
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img//UChicago_College_Horizontal_Color_RGB.png>]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.211 
-       [1]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 231.
+l.207 
+       [1] [2] [3]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 241.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 231.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 241.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 231.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 241.
  (c:/texlive/2021/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [2]
-Overfull \hbox (36.49074pt too wide) in paragraph at lines 233--234
+)
+Overfull \hbox (36.49074pt too wide) in paragraph at lines 243--244
 \OT1/cmtt/m/n/10 max_danceability\OT1/cmr/m/n/10 , \OT1/cmtt/m/n/10 target_valence \OT1/cmr/m/n/10 ): \OT1/cmtt/m/n/10 acousticness, danceability, energy, instrumentalness, liveness,
  []
 
-[3] [4
+[4] [5]
+Overfull \hbox (22.6391pt too wide) in paragraph at lines 275--275
+[][]\OT1/cmr/m/n/10 Drott Eric. 2018. ``Why the Next Song Mat-ters: Stream-ing, Rec-om-men-da-tion, Scarcity.'' |   []
+ []
+
+[6
 
 ]
-Overfull \hbox (27.25264pt too wide) in paragraph at lines 265--265
-[][]\OT1/cmr/m/n/10 Huron David and Mar-gulis Eliz-a-beth Hell-muth. |   [].
+Overfull \hbox (52.25934pt too wide) in paragraph at lines 275--275
+[][]\OT1/cmr/m/n/10 Huron David and Mar-gulis Eliz-a-beth Hell-muth. 2011. |   []|   []
  []
 
-[5] [6] [7] [8]
-Overfull \hbox (19.62698pt too wide) in paragraph at lines 265--265
-[][]\OT1/cmr/m/n/10 Sundberg Jo-han. |   []. Edited by Man-fred Clynes. Chap. VII:
+[7] [8]
+Overfull \hbox (2.60458pt too wide) in paragraph at lines 275--275
+[][][]\OT1/cmr/m/n/10 . 2019e. |   []|   [] Chap. 29: Aes-thetic Cri-
  []
 
-[9] [10] (c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+[9] [10] [11] [12] (c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 277.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 287.
  (c:/texlive/2021/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 277.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 287.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 280.
- [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] (./writeup.aux)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 290.
+ [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] (./writeup.aux)
 Package rerunfilecheck Info: File `writeup.out' has not changed.
 (rerunfilecheck)             Checksum: ECC6D8C348E927FD5647DB16CB94C48B;1117.
 Package logreq Info: Writing requests to 'writeup.run.xml'.
@@ -719,18 +727,18 @@ Package logreq Info: Writing requests to 'writeup.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 23092 strings out of 479646
- 406357 string characters out of 5885845
- 1415625 words of memory out of 5000000
- 40505 multiletter control sequences out of 15000+600000
+ 22792 strings out of 479646
+ 399512 string characters out of 5885845
+ 1438444 words of memory out of 5000000
+ 40199 multiletter control sequences out of 15000+600000
  478263 words of font info for 62 fonts, out of 8000000 for 9000
  452 hyphenation exceptions out of 8191
- 76i,6n,82p,1172b,3950s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 76i,6n,82p,1172b,3947s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on writeup.pdf (21 pages, 229801 bytes).
+Output written on writeup.pdf (23 pages, 234048 bytes).
 PDF statistics:
- 548 PDF objects out of 1000 (max. 8388607)
- 498 compressed objects within 5 object streams
- 303 named destinations out of 1000 (max. 500000)
+ 569 PDF objects out of 1000 (max. 8388607)
+ 516 compressed objects within 6 object streams
+ 306 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
