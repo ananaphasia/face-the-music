@@ -283,7 +283,6 @@
       \field{subtitle}{Studies in the Neurology of Music}
       \field{title}{Music and the Brain}
       \field{year}{1977}
-      \true{nocite}
     \endentry
     \entry{huron2011}{book}{}
       \name{author}{2}{}{%
@@ -661,6 +660,42 @@
       \field{title}{Music and Emotion}
       \field{year}{2001}
       \true{nocite}
+    \endentry
+    \entry{mulligan2022}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=408ddb8eceda7fe4e2360c5ce911c687}{%
+           family={Mulligan},
+           familyi={M\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{408ddb8eceda7fe4e2360c5ce911c687}
+      \strng{fullhash}{408ddb8eceda7fe4e2360c5ce911c687}
+      \strng{bibnamehash}{408ddb8eceda7fe4e2360c5ce911c687}
+      \strng{authorbibnamehash}{408ddb8eceda7fe4e2360c5ce911c687}
+      \strng{authornamehash}{408ddb8eceda7fe4e2360c5ce911c687}
+      \strng{authorfullhash}{408ddb8eceda7fe4e2360c5ce911c687}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{MIDiA}
+      \field{month}{1}
+      \field{title}{Music subscriber market shares Q2 2021}
+      \field{urlday}{23}
+      \field{urlmonth}{3}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.midiaresearch.com/blog/music-subscriber-market-shares-q2-2021
+      \endverb
+      \verb{url}
+      \verb https://www.midiaresearch.com/blog/music-subscriber-market-shares-q2-2021
+      \endverb
     \endentry
     \entry{scherer2001}{book}{}
       \name{author}{2}{}{%
