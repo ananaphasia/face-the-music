@@ -150,7 +150,7 @@
 % \bibliographystyle{apalike}
 % \setcitestyle{authoryear, open={((},close={))}
 
-\title{}
+\title{Face the Music}
 \author{Amelia Simonoff}
 \date{MONTH DD 2022}
 
@@ -199,47 +199,57 @@ I then set up the Raspberry Pi in the Media Arts, Data, and Design (MADD) Center
 
 \section{Background}
 
-From the first songs around a campfire, to soaring symphonies in concerthalls, to twenty-thousand strong rock band audiences, to sad songs after a breakup, music guides us, drives us, and affects who we are. It has always been part of the human experience, and music is often used to change or strengthen one's mood (\cite{huron2011}).
+\begin{flushright}
+    "To take part in music is central to our very humanness..."
 
-Music is incredibly prevalent around us in the modern day, and it is a language that is able to communicate emotional ideas succinctly, which speech is unable to do (\cite{henson1977}). However, music does does not always elicit emotions (\cite{16juslin2019}). The emotions that it does elicit, however, are usually basic emotions, such as joy, love, happiness, fear, anger, sorrow, and neutral (\cite{sundberg1983}). The ways in which it does so is affected by affected the current internal state of the listener (\cite{harrer1977}). 
+    --- Christopher Small, \textit{Musicking}
+\end{flushright}
 
-Patrik N. Juslin has created a model for how music elicits emotions in an individual, known as the BRECVEMA model: Brainstem reflex, Rhythmic entrainment, Evaluative conditioning, Contagion, Visual imagery, Episodic memory, Musical expectancy, and Aesthetic judgement (\cite{17juslin2019}). Each of these mechanisms affects the effected emotion differently: for example, music that stimulates the brainstem (such as sudden loud sounds) is more likely to induce arousal or surprise, while music that triggers episodic memory can induce any possible emotion, but especially nostalgia and longing (\cite{25juslin2019}). Of course, there are also other mechanisms with which music can elicit emotions, such as cognitive goal appraisal. 
+In our lives, music exists in a wide variety of contexts, and there are as many ways to interact with it as there are people. Music is an undertaken action: we create, perceive, and respond to music, and there are as many ways to do so as there are people (\cite{small1998}). 
 
-In fact, music listeners report that experiencing negative emotions, such as sadness, anger, or fear, is often pleasurable (\cite{32juslin2019}). However, music can only induce emotions over time: one note, out of context, cannot create an emotional state all on its own (\cite{schubert2001}). Also, the emotions that music induces are affected by the society and culture of the listener, which people often forget. Music also induces stronger emotions when it can be controlled, such as in private spaces or through busking (\cite{oneill2001}). 
+Music, with how incredibly prevalent it is around is in the modern day, may not always elicit emotions (\cite{juslin2019}). However, music is a language that is able to communicate emotional ideas succinctly, which speech is unable to do (\cite{henson1977}). These are usually basic emotions, such as joy, love, happiness, fear, anger, sorrow, and neutral (\cite{sundberg1983}). The ways in which it does so is affected by affected the current internal state of the listener (\cite{harrer1977}). 
 
-I wanted to, instead, focus on the other direction: what if we create music based on an emotion, instead of the other way around?
+Patrik N. Juslin has created a model for how music elicits emotions in an individual, known as the BRECVEMA model: Brainstem reflex, Rhythmic entrainment, Evaluative conditioning, Contagion, Visual imagery, Episodic memory, Musical expectancy, and Aesthetic judgement (\cite{juslin2019}, ch. 17). Juslin describes a continuum between musical sensation (in the brain) and emotional perception (in the conscious mind), which occers from primitive reaction formation in various parts of the brain which affects conscious thought. Each of these mechanisms affects the effected emotion differently: for example, music that stimulates the brainstem (such as sudden loud sounds) is more likely to induce arousal or surprise, while music that triggers episodic memory can induce any possible emotion, but especially nostalgia and longing (\cite{juslin2019}, ch. 25).
 
-For that, I needed a way to read the emotions of users in near real-time, and then a way to either synthesize music of a certain emotion or pull from an already-existing database. I knew that facial recognition software could accomplish the first step, and so I chose to use a pre-trained model.
+David Huron has also created a model for describing how music elicits certain physical responses in listeners, such as frisson (goosebumps) through the elements of anticipation inherent in continuous music through time (\cite{huron2006}). Known as the ITPRA Theory of Expectation, the Imagination response motivates an organism to do things that increase the likelihood of future beneficial outcomes; the Tension response prepares an organism for an event by changing arousal and attention; the Prediction response provides positive and negative feedback based on outcomes, the Reaction response addresses the worst-case situations by making a protective response; and the Appraisal response providespositive and negative reinforcements. The first two mechanisms occur before the outcome, while the last three mechanisms occur after the outcome is heard. This model also explains the fact about how  music listeners report that experiencing negative emotions, such as sadness, anger, or fear, is often pleasurable (\cite{juslin2019}, ch. 32)
 
-Facial recognition software has been available for the past DECADE (citation), and its implementations in the modern day are not without controversy. However, much research has been done on facial recognition, and current implementations are incredibly lightweight, especially using pre-trained models. 
+These two models try to both physical and emotional reactions to music. However, there are also other mechanisms with whic hmusic can elicit emotions, such as cognitive goal appraisal.
 
-Unfortunately, real-time music synthesis is not yet available. While artificial-intelligence based musical synthesis has already passed the Turing Test (citation), the models are not quite versatile enough yet to produce a continuous stream of music with changing input parameters (i.e., the emotion of the user). As such, I decided to use a corpus of music that is already labeled, which is found in many streaming services, such as \href{https://www.apple.com/apple-music/}{Apple Music} or \href{https://www.spotify.com/us/}{Spotify}.
+However, music can only induce emotions over time: one note, out of context, cannot create an emotional state all on its own (\cite{schubert2001}). Also, the emotions that music induces are shaped the society and culture of the listener, which people often forget. Music also induces stronger emotions when it can be controlled, such as in private spaces or through busking (\cite{oneill2001}). Music in private spaces can be more closely controlled and chosen by the listener, and so it is more likely to cause a strong emotional response. In public spaces, such as gyms or Muzak in elevators, music is usually thrust upon the listeners, who must tolerate the music that they are subjected to. However, in large public gatherings, such as crowds at a concert, the musical emotions are at their strongest due to the volume of the music, passion of the performers, and the synergetic emotional responses of the people in the crowd. 
 
-The art of providing recommendations from a previous song is a million-dollar problem in the music streaming industry: customer retention is, as with all other entertainment services, paramount. As such, services such as Apple Music, Pandora, or Spotify, all have well-curated algorithms for their musical recommendations, which are especially fine-tuned for commercial music (\cite{drott2018}). As such, I chose to use one of those algorithms for obtaining recommendations for my own project. By feeding the algorithm the genre preferences of the user, their top songs, and their emotion (see \hyperref[Methods]{Methods}), I receive musical suggestions that the user is likely to enjoy which also correspond to their current emotion.
+As such, there already exists an abundance of research describing how listeners perceive emotions in music, but it is rare that the listener can take an active role in shaping the emotive quality of the sound. In fact, under the current paradigms, the listener would have to themselves be a performer or a composer. I was then interested in creating music based on an emotion, instead of the other way around, where the listener and their emotions are active participants due in the generation of music and emotions.
+
+For that, I needed a way to read the emotions of users in near real-time, and then a way to either synthesize music of a certain emotion or pull from an already-existing database. Modern facial recognition software is a great candidate for accomplishing the first step, and so I used an already-existing software suite to accomplish this (known as a 'pre-trained model').
+
+Facial recognition software, first pioneered in the 1960's, has been available since 2001 for real-time video (\cite{yamaguchi2012}). Much research since then has been done, and current implementations are incredibly lightweight and are available to the public through open source licenses. However, facial recognition is not without its controversies. Worries include privacy violations about a new level of surveillance afforded by this technology, imperfect results for this technology for indiiduals who aren't light-skinned males, and lack of data protection concerns. This project does not record nor save any information, and is only available to the public in one location, bypassing these concerns. 
+
+Unfortunately, real-time synthesis of original musical sound is not yet available. While artificial-intelligence based musical synthesis has already passed the Turing Test (\cite{ailabs2018}), the models are not quite versatile enough yet to produce a continuous stream of music according to the changing emotions of the user. As such, used a corpus of recorded music from streaming services, such as \href{https://www.apple.com/apple-music/}{Apple Music} or \href{https://www.spotify.com/us/}{Spotify}.
+
+The algorithms providing recommendations from a previous song is a million-dollar problem in the music streaming industry: algorithms which provide a satisfying next song to the consumer increase customer retention through increasing satisfaction. This is paramount to increase revenue for these streaming servise. As such, platforms such as Apple Music, Pandora, or Spotify, all have well-researched algorithms for their musical recommendations, which are especially fine-tuned for commercial music (\cite{drott2018}). As such, I chose to use one of those algorithms for obtaining recommendations for my own project by leveraging the metadata of songs in its responses. By feeding the algorithm the genre preferences of the user, their top songs, and their emotion (see \hyperref[Methods]{Methods}), I receive musical suggestions that the user is likely to enjoy which also correspond to their current emotion.
 
 Spotify, the most-used music streaming service in the world (\cite{mulligan2022}), has many playlists with emotional labels, such as "Happy Beats" or "Sad Piano", etc.. However, Spotify does not label their music based on emotion outright, and instead classifies music by a large variety of parameters (see \hyperref[Methods]{Methods}). 
 
-\section[Significance Statement]{Significance Statement}
 
-Music is cool facial recognition is dope something about fronto-temporal dementia
 
 \section[Methods]{Methods}
 \label{Methods}
 
-This project is running on a Python backend with a Node.js environment communicating to a React application to output the music to a browser. The general overview of the project is outlined in \hyperref[fig1]{Figure 1}.
+The general overview of the project is outlined in \hyperref[fig1]{Figure 1}. The application consists of a few parts. A backend, written in Python, conducts the video inputs and outputs. It also processes the video frames and queries Spotify based on the emotions in the frames. In order to output the audio, a React application hosts the Spotify Web Playback applet, which demonstrates the current song playing and allows for user login. Finally, the front-end React application is supported by a Node.js server backend, which provides the information for the React application to display. 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{FtM Project.drawio.png}
-    \caption{High-level overview of the project. Each block is a submodule, each arrow is a communication pipeline. Left half written in Python, right half written in JavaScript.}
+    \caption{High-level overview of the project. Each block is a submodule, each arrow is a communication pipeline. Yellow: Python, blue: JavaScript.}
     \label{fig1}
 \end{figure}
 
-All Python processes (known as workers for \href{https://docs.python.org/3/library/multiprocessing.html}{multiprocessing}) run asynchronously and communicate using a \href{https://docs.python.org/3/library/queue.html}{Queue} datastructure. This is because the time for each processing step in the pipeline is variable, but results must be displayed at the same time. 
+All Python processes in this application (known as "workers" in this context) run asynchronously and communicate using a \href{https://docs.python.org/3/library/queue.html}{Queue} datastructure. This is because the time for each processing step in the pipeline is variable, but results must be displayed at the same time. 
 
-\subsection[Video Input]{Video Input}
+\subsection[Video Input and Output]{Video Input and Output}
 
 I use a Python environment running \href{https://pypi.org/project/opencv-python/}{OpenCV} to pull video data from the webcam. Each frame is passed to \href{https://pypi.org/project/deepface/}{DeepFace}, which is a wrapper for multiple state-of-the-art emotion recognition models.
+
+Each video frame is rendered, and a user's emotion, if available, is displayed on the frame. Pulling and rendering video frames takes significantly less time than analyzing an emotion in a frame, and so often multiple video frames are displayed with the same analyzed emotion.
 
 \subsection[Emotion Analysis]{Emotion Analysis}
 
@@ -247,17 +257,28 @@ I rewrote the available open-source code for real-time analysis of incoming vide
 
 Each frame is classified by the probability that it is one of the following emotions: \texttt{angry, disgusted, scared, happy, sad, surprised}, and \texttt{neutral}. Then, the most likely emotion is chosen as the \texttt{dominant emotion}, which is then sent for downstream processing.
 
-\subsection[Video Output]{Video Output}
-
-Each video frame is rendered, and a user's emotion, if available, is displayed on the frame. Pulling and rendering video frames takes significantly less time than analyzing an emotion in a frame, and so often multiple video frames are displayed with the same analyzed emotion.
-
 \subsection[Music Recommendations]{Music Recommendations}
 
-Parsed emotions are also passed to a third worker, which communicates with Spotify through the \href{https://developer.spotify.com/documentation/web-api/}{Spotify Web API}. Upon initialization, the worker authenticates the user using the Spotify OAuth2 service, and then queries the API for the user's top songs and artists. The worker then makes a list of the genres of the user's top songs, and compares it with the available genres for recommendation, which is used as a mask. 
+Parsed emotions are also passed to a third worker, which communicates with Spotify through the \href{https://developer.spotify.com/documentation/web-api/}{Spotify Web API}. Upon initialization, the worker authenticates the user using the Spotify OAuth2 service, and then queries the API for the user's top songs and artists. The worker then makes a list of the genres of the user's top songs, and compares it with the available genres for recommendation.
 
 After initialization, the worker loads the parameters for the recommendation request for each emotion. Every ten seconds, the worker queries Spotify for a list of recommendations given a random number of user top songs, artists, and genres as seeds, as well as the parameters given by the current emotion. The worker then plays a randomly chosen song from the returned list of suggestions, starting between one-sixth and one-third of the way through the song. I chose these values because they are close to the start of the song but are past any lead-ins or introns, which might not accurately represent the emotion codified by the song.
 
-The tunable parameters that I chose for each emotion for the \href{https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recommendationsrecommendation}{recommendations query} from Spotify are as follows. Each parameter has a maximum, minimum, and target value (e.g. \texttt{min\char`_acousticness}, \texttt{max\char`_danceability}, \texttt{target\char`_valence} ): \texttt{acousticness, danceability, energy, instrumentalness, liveness, loudness, popularity, speechiness, tempo}, and \texttt{valence}. See \href{https://github.com/as4mo3/face-the-music/blob/master/params.py}{params.py} for the tuned parameters for each emotion.
+It is not a simple matter to assign emotions to recorded songs. Spotify does not directly contain emotional data, such as 'happy' or 'sad.' However, since its algorithms have created playlists such as "Happy Beats" or "Sad Piano," we can ask how these playlists are created and assigned. 
+
+Spotify's \href{https://developer.spotify.com/documentation/web-api/reference/#/operations/get-recommendationsrecommendation}{recommendations query} requires a list of metadata than can be tuned. Each parameter has a maximum, minimum, and target value (e.g. \texttt{min\char`_acousticness}, \texttt{max\char`_danceability}, \texttt{target\char`_valence}): \texttt{acousticness, danceability, energy, instrumentalness, liveness, loudness, popularity, speechiness, tempo}, and \texttt{valence}. See \href{https://github.com/as4mo3/face-the-music/blob/master/params.py}{params.py} for the tuned parameters for each emotion and see \hyperref[Parameter Tuning]{Parameter Tuning} for a description of how I tuned each one. The descriptions of each musically revelant parameter are below (based on the \href{https://developer.spotify.com/documentation/web-api/reference/#/operations/get-audio-features}{Spotify reference}):
+
+\begin{itemize}
+    \item \texttt{Acousticness}: A confidence measure from 0.0 to 1.0 of whether the track is acoustic. 1.0 represents high confidence the track is acoustic.
+    \item \texttt{Danceability}: How suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity. A value of 0.0 is least danceable and 1.0 is most danceable.
+    \item \texttt{Energy}: A measure from 0.0 to 1.0 and represents a perceptual measure of intensity and activity. Typically, energetic tracks feel fast, loud, and noisy. For example, death metal has high energy, while a Bach prelude scores low on the scale. Perceptual features contributing to this attribute include dynamic range, perceived loudness, timbre, onset rate, and general entropy.
+    \item \texttt{Instrumentalness}: Predicts whether a track contains no vocals. "Ooh" and "aah" sounds are treated as instrumental in this context. Rap or spoken word tracks are clearly "vocal". The closer the instrumentalness value is to 1.0, the greater likelihood the track contains no vocal content. Values above 0.5 are intended to represent instrumental tracks, but confidence is higher as the value approaches 1.0.
+    \item \texttt{Liveness}: Detects the presence of an audience in the recording. Higher liveness values represent an increased probability that the track was performed live. A value above 0.8 provides strong likelihood that the track is live.
+    \item \texttt{Loudness}: In decibels (dB). Loudness values are averaged across the entire track and are useful for comparing relative loudness of tracks. Loudness is the quality of a sound that is the primary psychological correlate of physical strength (amplitude). Values typically range between -60 and 0 db.
+    \item \texttt{Popularity}: How popular a song is on Spotify. 0 represents a completely unknown song, and 100 represents one of the most popular tracks on the platform.
+    \item \texttt{Speechiness}: Detects the presence of spoken words in a track. The more exclusively speech-like the recording (e.g. talk show, audio book, poetry), the closer to 1.0 the attribute value. Values above 0.66 describe tracks that are probably made entirely of spoken words. Values between 0.33 and 0.66 describe tracks that may contain both music and speech, either in sections or layered, including such cases as rap music. Values below 0.33 most likely represent classical music and other non-speech-like tracks.
+    \item \texttt{Tempo}: The overall estimated tempo of a track in beats per minute (BPM). It derives directly from the average beat duration.
+    \item \texttt{Valence}: A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
+\end{itemize}
 
 The emotions of the currently-playing music are also passed to the video output, where they are rendered on each frame.
 
@@ -266,16 +287,17 @@ The emotions of the currently-playing music are also passed to the video output,
 Concurrently, a Node.js process supporting a React application is running to display the \href{https://developer.spotify.com/documentation/web-playback-sdk/}{Spotify Web Playback SDK} in a browser. The backend once again authorizes the user, and the browser functions as a device for Spotify playback, which is used as the default playback destination for the Spotify worker. 
 
 \subsection[Parameter Tuning]{Parameter Tuning}
+\label{Parameter Tuning}
 
-Following the BRECVEMA model, discussed in \cite{17juslin2019}, different aspects encoded in music can stimulate different emotions through the stimulation of different physical processes (\cite{25juslin2019}, Table 25.1). The following list describes my vision for each emotion. The complete list of tuned parameters can be found in \href{https://github.com/as4mo3/face-the-music/blob/master/params.py}{params.py}. 
+Following the BRECVEMA model, discussed in \cite{juslin2019}, ch. 17, different aspects encoded in music can stimulate different emotions through the stimulation of different physical processes (\cite{juslin2019}, ch. 25, Table 25.1). Furthermore,  David Huron's ITPRA Theory of Expectation describes how predictable and novel concepts can lead to frisson and surprise responses (\cite{huron2006}). The following list describes how I tuned the parameters for each emotion. The complete list of tuned parameters can be found in \href{https://github.com/as4mo3/face-the-music/blob/master/params.py}{params.py}. 
 
 \begin{itemize}
     \item \textbf{Angry}: Anger, a basic emotion, is usually observed due to the stimulation of the amygdala in particular and limbic system in general. Furthermore, listeners can become physiologically entrained to the music, with their hearbeats and breathing changing due to the rhythms. As such, angry music must be loud and, ideally, have a beat at around 2Hz for physical entrainment (120 bpm). However, it also must be "heavy" enough to exude a low emotional valence, for which the \texttt{valence} parameter is ideal.
-    \item \textbf{Disgusted}: Disgust, another basic emotion originating from the limbic system, is a primal avoidance reflex, which is usually triggered from a positive expectation not being met. Music that is disgusting must, as such, not meet the expectations of the listeners, in whatever sense. As such, I tuned the parameters to focus on discordant music with non-standard beats per minute.
+    \item \textbf{Disgusted}: Disgust, another basic emotion originating from the limbic system, is a primal avoidance reflex, which is usually triggered from a positive expectation not being met. Music that is disgusting must, as such, not meet the expectations of the listeners, in whatever sense. Disgust could also be classified as unpleasurable surprise response. Musicians often use predictablitiy to evoke listener pleasure through the predicion effect, with melodies consisting mostly of small pitch intervals and becoming more pleasurable the more a listener hears them. As such, I tuned the parameters to focus on discordant music that is surprising but in a way that is not pleasurable, where the listeners could not be able to predict the music. 
     \item \textbf{Scared}: Fear is one of the most primal emotions. It can be elicited by the slow buildup of the music towards something unknown, with an increase in one's pulse and other physiological states. The parameters for this kind of music were tuned to low-\texttt{valence} and mid-\texttt{tempo}.
     \item \textbf{Happy}: An increase in excitement is observed in music with high rhythmic entrainment and tempo, usually thought of in a major key. For this, the \texttt{danceability} parameter was set to a maximum, as musical rhythms inducing a high level of motor responses (especially in a group setting) are perceived with a high emotional valence.
     \item \textbf{Sad}: Sad music is thought of as, mostly, slow and somber. As such, I tuned the parameters for this kind of music to be low-\texttt{valence} and low-\texttt{tempo}, with minimal amounts of \texttt{danceability}.
-    \item \textbf{Surprised}: Surprised is a very basic reflex originatng from the brainstem. Sudden loud noises, key changes, or other unpredictable effects in the music can mark surprise. Notably, surprising music must have high-\texttt{valence}, as music with a low-\texttt{valence} would more likely be understood as fearful.
+    \item \textbf{Surprised}: Surprised is a basic reflex originatng from the brainstem. Surprise can be evoked through schematic mechanisms, violating a listener's schema for a certain musical piece; dynamic, so that a work-specific element of surprise is violated, or veridical, violating expectations about the work itself. Surprise can also be positively valuenced due to pleasurable outcomes after the moment of surprise. As such, pleasurable surprising music must have high-\texttt{valence}, as music with a low-\texttt{valence} would more likely be understood as fearful or disgusting.
     \item \textbf{Neutral}: Neutral music is the hardest to define -- what one person may consider neutral may be the most exciting to another. As such, the parameters here were all tuned to be middle-of-the-road, targets of 50\% for most of them. 
 \end{itemize}
 
@@ -286,12 +308,14 @@ The code is available on \href{https://github.com/as4mo3/face-the-music/}{Github
 \section[Observations]{Observations}
 \label{Observations}
 
-I observed people being more entertained with the emotional recognition portion of the project than with the music generation. Knowing that there are seven emotions, people would try to "unlock them all," which is not as easy as it sounds (disgust is notoriously hard to produce consistently). 
+I am planning to set up this project in the MADD Center at the University of Chicago. This will be a public art installation, and anyone will be able to interact with the project. 
+
+Over my course of testing and observations, I have found that people are more entertained with the emotional recognition portion of the project than with the music generation. Knowing that there are seven emotions, people would try to contort their faces to display all of them, which is not as easy as it sounds (disgust is notoriously hard to produce consistently). 
 
 \section[Discussion and Conclusion]{Discussion and Conclusion}
 \label{Discussion and Conclusion}
 
-Music and emotions are, of course, indelibly linked. In this project, investigating how emotions affect music, I found that people are more interested in the analysis of their emotions than the music elicited by them. 
+Music and emotions are, of course, indelibly linked. In this project, investigating how emotions affect music, I found that people are more interested in the analysis of their emotions than the music elicited by them.
 
 % \section[Conclusion]{Conclusion}
 % \label{Conclusion}

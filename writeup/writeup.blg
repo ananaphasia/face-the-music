@@ -1,16 +1,16 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [1] Config.pm:310> INFO - Logfile is 'writeup.blg'
-[410] biber-MSWIN32:340> INFO - === 
-[595] Biber.pm:418> INFO - Reading 'writeup.bcf'
-[1556] Biber.pm:969> INFO - Using all citekeys in bib section 0
-[1658] Biber.pm:4383> INFO - Processing section 0
-[1698] Biber.pm:4574> INFO - Looking for bibtex file 'ref.bib' for section 0
-[1909] bibtex.pm:1713> INFO - LaTeX decoding ...
-[2121] bibtex.pm:1518> INFO - Found BibTeX data source 'ref.bib'
-[3272] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[3272] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[3272] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'level = 4' with 'level = 2'
-[3273] Biber.pm:4203> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'en-US'
-[3273] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[3399] bbl.pm:654> INFO - Writing 'writeup.bbl' with encoding 'UTF-8'
-[3475] bbl.pm:757> INFO - Output to writeup.bbl
+[268] biber-MSWIN32:340> INFO - === 
+[391] Biber.pm:418> INFO - Reading 'writeup.bcf'
+[1073] Biber.pm:969> INFO - Using all citekeys in bib section 0
+[1234] Biber.pm:4383> INFO - Processing section 0
+[1310] Biber.pm:4574> INFO - Looking for bibtex file 'ref.bib' for section 0
+[1474] bibtex.pm:1713> INFO - LaTeX decoding ...
+[1712] bibtex.pm:1518> INFO - Found BibTeX data source 'ref.bib'
+[2358] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'level = 4' with 'level = 2'
+[2358] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2358] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2365] Biber.pm:4203> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'en-US'
+[2365] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[2448] bbl.pm:654> INFO - Writing 'writeup.bbl' with encoding 'UTF-8'
+[2517] bbl.pm:757> INFO - Output to writeup.bbl

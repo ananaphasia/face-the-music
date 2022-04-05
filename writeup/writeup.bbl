@@ -19,6 +19,34 @@
 
 \refsection{0}
   \datalist[entry]{cms/global//global/global}
+    \entry{ailabs2018}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=06d167891140d2c7984e2552eadb9a52}{%
+           family={AILabs},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{06d167891140d2c7984e2552eadb9a52}
+      \strng{fullhash}{06d167891140d2c7984e2552eadb9a52}
+      \strng{bibnamehash}{06d167891140d2c7984e2552eadb9a52}
+      \strng{authorbibnamehash}{06d167891140d2c7984e2552eadb9a52}
+      \strng{authornamehash}{06d167891140d2c7984e2552eadb9a52}
+      \strng{authorfullhash}{06d167891140d2c7984e2552eadb9a52}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{2}
+      \field{title}{AI music composition passed Turing test}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://ailabs.tw/human-interaction/ai-music-composition/
+      \endverb
+      \verb{url}
+      \verb https://ailabs.tw/human-interaction/ai-music-composition/
+      \endverb
+    \endentry
     \entry{clynes1983}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=9f51cfcb873ab5c9c33eeef298e3da37}{%
@@ -284,6 +312,35 @@
       \field{title}{Music and the Brain}
       \field{year}{1977}
     \endentry
+    \entry{huron2006}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=322a7461ef0a1de376e227a3d8afe98e}{%
+           family={Huron},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {The MIT Press}%
+      }
+      \strng{namehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{fullhash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{bibnamehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{authorbibnamehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{authornamehash}{322a7461ef0a1de376e227a3d8afe98e}
+      \strng{authorfullhash}{322a7461ef0a1de376e227a3d8afe98e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{1: Anticipation is a very low-level concept in biological systems, and the ability to anticipate future events is important for survival. He posits the ITPRA Theory of Expectation: the Imagination response motivates an organism to do things that increase the likelihood of future beneficial outcomes; the Tension response prepares an organism for an event by changing arousal and attention; the Prediction response provides positive and negative feedback based on outcomes, the Reaction response addresses the worst-case situations by making a protective response; and the Appraisal response providespositive and negative reinforcements. First two pre-outcome, last three post-outcome. \newline 2. Surprise can be positively valenced due to pleasurable outcomes. Three kinds of surprise: laughter, generated through innocuous risks; awe, generated through the freeze response; and frisson, which is demonstrated through loudness and sudhen menical changes. Frisson: gaining command, awe: taking command, laughter: transformation. \newline 5. Listeners expect melodies to consist mostly of small pitch intervals, with a reversal in direction after larger jumps. 8. People like music the more they listen to it. \newline 13. Predictability can be created through schematic, dynamic, and veridical devices. Musicians often use predictability to evoke listener pleasure through the prediction effect. \newline 14. Surprise can be evoked through schematic mechanisms, violating a listener's schema; dynamic, so that a work-specific element of surprise is violated; or veridical, violating expectations about the work itself. \newline 15. Tension can be evoked by anticipation, suspension, and delay through eg. ritardandos. Premonition is also incredibly important. \newline}
+      \field{subtitle}{Music and the Psychology of Expectation}
+      \field{title}{Sweet Anticipation}
+      \field{year}{2006}
+    \endentry
     \entry{huron2011}{book}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=322a7461ef0a1de376e227a3d8afe98e}{%
@@ -334,6 +391,7 @@
       \field{subtitle}{Theory, Research, Applications}
       \field{title}{Handbook of Msuic and Emotion}
       \field{year}{2011}
+      \true{nocite}
     \endentry
     \entry{juslin2001}{book}{}
       \name{author}{1}{}{%
@@ -382,7 +440,7 @@
       \field{year}{2001}
       \true{nocite}
     \endentry
-    \entry{15juslin2019}{book}{}
+    \entry{juslin2019}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d34572d6128ddf262c493ab5764af8b9}{%
            family={Juslin},
@@ -404,6 +462,36 @@
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{extradate}{1}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{subtitle}{Unlocking the secrets of musical affect}
+      \field{title}{Musical Emotions Explained}
+      \field{year}{2019}
+    \endentry
+    \entry{15juslin2019}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{fullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{bibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \field{extraname}{3}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradate}{2}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -433,10 +521,10 @@
       \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
       \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
       \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
-      \field{extraname}{3}
+      \field{extraname}{4}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradate}{2}
+      \field{extradate}{3}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -446,40 +534,9 @@
       \field{subtitle}{Unlocking the secrets of musical affect}
       \field{title}{Musical Emotions Explained}
       \field{year}{2019}
+      \true{nocite}
     \endentry
     \entry{17juslin2019}{book}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=d34572d6128ddf262c493ab5764af8b9}{%
-           family={Juslin},
-           familyi={J\bibinitperiod},
-           given={Patrik\bibnamedelima N.},
-           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{1}{%
-        {Oxford University Press}%
-      }
-      \strng{namehash}{d34572d6128ddf262c493ab5764af8b9}
-      \strng{fullhash}{d34572d6128ddf262c493ab5764af8b9}
-      \strng{bibnamehash}{d34572d6128ddf262c493ab5764af8b9}
-      \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
-      \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
-      \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
-      \field{extraname}{4}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradate}{3}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{annotation}{Music is, indeed, a stimulus which then, through a complex mechanism, arouses emotions, just as any other stimulus. Emotions can be triggered by a "musical event," containing music, listener, and context. Mechanisms for emotion effectations are the BRECVEMA model: Brainstem reflex, Rhythmic entrainment, Evaluative conditioning, Contagion, Visual imagery, Episodic memory, Musical expectancy, and Aesthetic judgement. Could also be cognitive goal appraisal. He goes deeper in depth in each of these in the subsequent chapters.}
-      \field{chapter}{17: How Does Music Arouse Emotions?}
-      \field{subtitle}{Unlocking the secrets of musical affect}
-      \field{title}{Musical Emotions Explained}
-      \field{year}{2019}
-    \endentry
-    \entry{25juslin2019}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d34572d6128ddf262c493ab5764af8b9}{%
            family={Juslin},
@@ -505,13 +562,14 @@
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{annotation}{He has a table of each of the BRECVEMA aspects with, among other things, induced affect, induction speed, degree of volitional influence, availability to consciousness, and dependendence on musical structure. B: arousal, surprise; R: arousal increase/decrease; E: basic emotions; C: basic emotions; V: all possible emotions; E: all possible emotions (esp nostalgia and longing); M: anticipation, anxiety, surprise, releif, tension. All are medium dependent on musical structure except E, E (low) and M (high). Musical emotions involve A1, cingulate, PFC, PAG, emotional processing. Real-world musical events often multiply mediated, not just one-to-one emotion:music. BRECVEMA response framework explains individual differences between listeners, and also explains no response (if no relevant information present). Personal musical induction mechanisms still influenced by context. Musical emotion evocation is moderately universal across cultures: low-level mechanisms conserved, responses not.}
-      \field{chapter}{25: Predictions, Implications, Complications}
+      \field{annotation}{Music is, indeed, a stimulus which then, through a complex mechanism, arouses emotions, just as any other stimulus. Emotions can be triggered by a "musical event," containing music, listener, and context. Mechanisms for emotion effectations are the BRECVEMA model: Brainstem reflex, Rhythmic entrainment, Evaluative conditioning, Contagion, Visual imagery, Episodic memory, Musical expectancy, and Aesthetic judgement. Could also be cognitive goal appraisal. He goes deeper in depth in each of these in the subsequent chapters.}
+      \field{chapter}{17: How Does Music Arouse Emotions?}
       \field{subtitle}{Unlocking the secrets of musical affect}
       \field{title}{Musical Emotions Explained}
       \field{year}{2019}
+      \true{nocite}
     \endentry
-    \entry{29juslin2019}{book}{}
+    \entry{25juslin2019}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=d34572d6128ddf262c493ab5764af8b9}{%
            family={Juslin},
@@ -533,6 +591,39 @@
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
       \field{extradate}{5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{He has a table of each of the BRECVEMA aspects with, among other things, induced affect, induction speed, degree of volitional influence, availability to consciousness, and dependendence on musical structure. B: arousal, surprise; R: arousal increase/decrease; E: basic emotions; C: basic emotions; V: all possible emotions; E: all possible emotions (esp nostalgia and longing); M: anticipation, anxiety, surprise, releif, tension. All are medium dependent on musical structure except E, E (low) and M (high). Musical emotions involve A1, cingulate, PFC, PAG, emotional processing. Real-world musical events often multiply mediated, not just one-to-one emotion:music. BRECVEMA response framework explains individual differences between listeners, and also explains no response (if no relevant information present). Personal musical induction mechanisms still influenced by context. Musical emotion evocation is moderately universal across cultures: low-level mechanisms conserved, responses not.}
+      \field{chapter}{25: Predictions, Implications, Complications}
+      \field{subtitle}{Unlocking the secrets of musical affect}
+      \field{title}{Musical Emotions Explained}
+      \field{year}{2019}
+      \true{nocite}
+    \endentry
+    \entry{29juslin2019}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=d34572d6128ddf262c493ab5764af8b9}{%
+           family={Juslin},
+           familyi={J\bibinitperiod},
+           given={Patrik\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{fullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{bibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
+      \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
+      \field{extraname}{7}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{extradate}{6}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -562,10 +653,10 @@
       \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
       \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
       \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
-      \field{extraname}{7}
+      \field{extraname}{8}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradate}{6}
+      \field{extradate}{7}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -595,10 +686,10 @@
       \strng{authorbibnamehash}{d34572d6128ddf262c493ab5764af8b9}
       \strng{authornamehash}{d34572d6128ddf262c493ab5764af8b9}
       \strng{authorfullhash}{d34572d6128ddf262c493ab5764af8b9}
-      \field{extraname}{8}
+      \field{extraname}{9}
       \field{sortinit}{J}
       \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradate}{7}
+      \field{extradate}{8}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
@@ -608,6 +699,7 @@
       \field{subtitle}{Unlocking the secrets of musical affect}
       \field{title}{Musical Emotions Explained}
       \field{year}{2019}
+      \true{nocite}
     \endentry
     \entry{sloboda2001}{book}{}
       \name{author}{2}{}{%
@@ -845,6 +937,35 @@
       \field{title}{Music and Emotion}
       \field{year}{2001}
     \endentry
+    \entry{small1998}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dd5a36ffdd14a279448c6b06e88215b9}{%
+           family={Small},
+           familyi={S\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Hanover: Wesleyan University Press}%
+      }
+      \strng{namehash}{dd5a36ffdd14a279448c6b06e88215b9}
+      \strng{fullhash}{dd5a36ffdd14a279448c6b06e88215b9}
+      \strng{bibnamehash}{dd5a36ffdd14a279448c6b06e88215b9}
+      \strng{authorbibnamehash}{dd5a36ffdd14a279448c6b06e88215b9}
+      \strng{authornamehash}{dd5a36ffdd14a279448c6b06e88215b9}
+      \strng{authorfullhash}{dd5a36ffdd14a279448c6b06e88215b9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{Music exists in a very wide variety of contexts. Claims that music is an activity, not a thing or an object, and so "music" DNE. Music currently is valued as the object itself instead of the methods of creating, perceiving, or responding to it. Interactions during musical events are assumed to be composer to performer to listeners, and not across or backwards. Musical works exist in order to give performers something to perform. "To take part in music is central to our very humanness..."}
+      \field{chapter}{Prelude: Music and Musicking}
+      \field{title}{Musicking: The Meanings of Performing and Listening}
+      \field{year}{1998}
+    \endentry
     \entry{stravinsky1936}{book}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=96fe96bacb55c5e3d1c1fae92fbeb615}{%
@@ -913,6 +1034,47 @@
       \field{subtitle}{The Neuropsychology of Music}
       \field{title}{Music, Mind, and Brain}
       \field{year}{1983}
+    \endentry
+    \entry{yamaguchi2012}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4914e97caf028d315b7208a86f12c3b9}{%
+           family={Yamaguchi},
+           familyi={Y\bibinitperiod},
+           given={Osamu},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=64eb8e48c1cfe6cc9ca47365dc5b3366}{%
+           family={Pal},
+           familyi={P\bibinitperiod},
+           given={Malay\bibnamedelimb K.\bibnamedelimi Kundu;\bibnamedelimb Sushmita\bibnamedelimb Mitra;\bibnamedelimb Debasis\bibnamedelimb Mazumdar;\bibnamedelimb Sankar\bibnamedelima K.},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media}%
+      }
+      \strng{namehash}{4914e97caf028d315b7208a86f12c3b9}
+      \strng{fullhash}{4914e97caf028d315b7208a86f12c3b9}
+      \strng{bibnamehash}{4914e97caf028d315b7208a86f12c3b9}
+      \strng{authorbibnamehash}{4914e97caf028d315b7208a86f12c3b9}
+      \strng{authornamehash}{4914e97caf028d315b7208a86f12c3b9}
+      \strng{authorfullhash}{4914e97caf028d315b7208a86f12c3b9}
+      \strng{editorbibnamehash}{64eb8e48c1cfe6cc9ca47365dc5b3366}
+      \strng{editornamehash}{64eb8e48c1cfe6cc9ca47365dc5b3366}
+      \strng{editorfullhash}{64eb8e48c1cfe6cc9ca47365dc5b3366}
+      \field{sortinit}{Y}
+      \field{sortinithash}{fd67ad5a9ef0f7456bdd9aab10fe1495}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{Face Recognition Technology and Its Real-World Application}
+      \field{title}{Perception and Machine Intelligence: First Indo-Japan Conference, PerMIn 2012, Kolkata, India, January 12–13, 2011, Proceedings}
+      \field{year}{2012}
+      \field{pages}{28\bibrangedash 34}
+      \range{pages}{7}
     \endentry
   \enddatalist
 \endrefsection
