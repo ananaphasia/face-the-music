@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber writeup"] 1649197750 "writeup.bcf" "writeup.bbl" "writeup" 1649199607
+["biber writeup"] 1649197750 "writeup.bcf" "writeup.bbl" "writeup" 1649259887
   "ref.bib" 1649197743 20162 defce90c36c6f54a69969289ccb09782 ""
-  "writeup.bcf" 1649199607 186941 5bbd7353790ca52b2c57e87030850def "pdflatex"
+  "writeup.bcf" 1649259886 186941 5bbd7353790ca52b2c57e87030850def "pdflatex"
   (generated)
   "writeup.bbl"
   "writeup.blg"
-["pdflatex"] 1649199600 "c:/Users/Antony/Documents/uChicago/Winter 2022/Music Thesis/writeup/writeup.tex" "writeup.pdf" "writeup" 1649199607
-  "c:/Users/Antony/Documents/uChicago/Winter 2022/Music Thesis/writeup/writeup.tex" 1649199591 27024 8286110b6112b34a529fd2aea24b277a ""
+["pdflatex"] 1649259879 "c:/Users/Antony/Documents/uChicago/Winter 2022/Music Thesis/writeup/writeup.tex" "writeup.pdf" "writeup" 1649259887
+  "c:/Users/Antony/Documents/uChicago/Winter 2022/Music Thesis/writeup/writeup.tex" 1649259870 35551 ab5069cb600aa5ad517352602baece4d ""
   "c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1646689302 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1646690268 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1646689837 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -37,6 +37,7 @@
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm" 1646692654 692 1b6510779f0f05e9cbf03e0f6c8361e6 ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1646688598 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1646688598 32080 340ef9bf63678554ee606688e7b5339d ""
+  "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1646688598 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1646688598 35752 024fb6c41858982481f6968b5fc26508 ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1646688598 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1646688598 37944 359e864bd06cde3b1cf57bb20757fb06 ""
@@ -139,11 +140,11 @@
   "c:/texlive/2021/texmf.cnf" 1646694085 713 e69b156964470283e0530f5060668171 ""
   "img//FtM Project.drawio.png" 1648952534 21308 de4da36f221b93815fbc5fe84dbcd04f ""
   "img//UChicago_College_Horizontal_Color_RGB.png" 1647536505 73975 00046c0e889f4c8800ddc49d69928474 ""
-  "writeup.aux" 1649199607 6767 3f8c3f71ec71e47d92ce1c0740d89099 "pdflatex"
+  "writeup.aux" 1649259886 6640 e5ae73a73026192cfab85d6aaa4d355c "pdflatex"
   "writeup.bbl" 1649197758 55854 9d2aa90dc2c51af068d9c03bfca65edc "biber writeup"
-  "writeup.out" 1649199607 1486 427f494f55ed5eb4fa8ead4e53cf938f "pdflatex"
-  "writeup.run.xml" 1649199607 2421 7f87bcd247075fb848f2b15cbea6e647 "pdflatex"
-  "writeup.tex" 1649199591 27024 8286110b6112b34a529fd2aea24b277a ""
+  "writeup.out" 1649259886 1486 a80154767d309d3127cdfc30ae8dcb21 "pdflatex"
+  "writeup.run.xml" 1649259886 2421 7f87bcd247075fb848f2b15cbea6e647 "pdflatex"
+  "writeup.tex" 1649259870 35551 ab5069cb600aa5ad517352602baece4d ""
   (generated)
   "writeup.aux"
   "writeup.bcf"
